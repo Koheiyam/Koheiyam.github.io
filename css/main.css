@@ -1,0 +1,39 @@
+@media (min-width: 1024px){
+
+	/* General */
+	html,body {
+		height: 100%;
+		margin: 0px;
+	}
+
+
+
+	/* Home background */
+
+	.bg-img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		z-index: -1;
+	}
+	.btn a {
+		color: #FFA400;
+		font: arial;
+		font-size: 1.95vw;
+		text-decoration: none;
+	}
+
+	.btn-left {
+		float: left;
+		margin: 30% 0% 0% 3%;
+	}
+	.btn-right {
+		float: right;
+		margin: 30% 4% 0% 0%;
+	}
+	.btn-bottom {
+		text-align: right;
+		clear: both;
+		padding: 17% 45.7% 0% 0%;
+	}
+}
