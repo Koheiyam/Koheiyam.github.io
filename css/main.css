@@ -9,6 +9,7 @@
 
 		h2,h3,p,a {
 			font-family: "arial";
+			color: #303030
 		}
 
 		h2 {
@@ -70,17 +71,6 @@
 			z-index: 1;
 		}
 
-		#black {
-			background-color: rgba(0,0,0,0.3);
-			position: absolute;
-			padding: 0 0 1040px 0;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			z-index: 2;
-		}
-
 		.contents {
 			position: absolute;
 			right: 0;
@@ -89,15 +79,25 @@
 			bottom: 0;
 			margin: 256px auto;
 			width: 740px;
-			z-index: 4;
 		}
 
 
 		/* about */
+			#black#about {
+				background-color: rgba(0,0,0,0.3);
+				position: absolute;
+				padding: 0 0 1400px 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 2;
+			}
+
 			#about {
 				background-color: rgba(255,255,255,0.96);
 				position: absolute;
-				padding: 0 0 1040px 0;
+				padding: 0 0 1400px 0;
 				box-shadow: 0px 0px 99px;
 				z-index: 3;
 				width: 88%;	
@@ -116,12 +116,40 @@
 				width: 420px;
 			}
 
+			.SNS-link-btn img {
+				margin: 16px 16px 0 0;
+			}
+
 			.about-text {
-				margin: 320px 0px;
+				margin: 340px 0 0 0;
+			}
+
+			.about-text p {
+				line-height: 240%
+			}
+
+			.about-text a:link {
+				color: #FFA400;
+			}
+
+			.about-text a:visited {
+				color: #FFA400;
 			}
 
 
+
 		/* story */
+			#black#story {
+				background-color: rgba(0,0,0,0.3);
+				position: absolute;
+				padding: 0 0 1040px 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 2;
+			}
+
 			#story {
 				background-color: rgba(255,255,255,0.96);
 				position: absolute;
@@ -134,6 +162,17 @@
 
 
 		/* activity */
+			#black#activity {
+				background-color: rgba(0,0,0,0.3);
+				position: absolute;
+				padding: 0 0 1040px 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 2;
+			}
+
 			#activity {
 				background-color: rgba(255,255,255,0.96);
 				position: absolute;
@@ -157,7 +196,7 @@
 				margin: 0 auto;
 			}
 
-			 .activity-list {
+			.activity-list {
 				background-color: rgb(255,100,100);
 				position: absolute;
 				left: 0;
