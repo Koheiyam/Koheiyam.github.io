@@ -24,6 +24,7 @@
 		}
 
 
+
 	/* Home background */
 
 		.bg-img {
@@ -71,19 +72,29 @@
 			z-index: 1;
 		}
 
-		.contents {
+		#black {
+			background-color: rgba(0,0,0,0.3);
 			position: absolute;
+			padding: 0 0 100% 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+		}
+
+		.contents {
 			right: 0;
 			left: 0;
 			top: 0px;
 			bottom: 0;
-			margin: 256px auto;
+			margin: 256px auto 128px auto;
 			width: 740px;
 		}
 
 
 		/* about */
-			#black#about {
+			/* #black #about {
 				background-color: rgba(0,0,0,0.3);
 				position: absolute;
 				padding: 0 0 1400px 0;
@@ -92,16 +103,18 @@
 				bottom: 0;
 				left: 0;
 				z-index: 2;
-			}
+			} */
 
 			#about {
 				background-color: rgba(255,255,255,0.96);
 				position: absolute;
-				padding: 0 0 1400px 0;
 				box-shadow: 0px 0px 99px;
-				z-index: 3;
 				width: 88%;	
 				right: 0;
+			}
+
+			.profile {
+				overflow: hidden;
 			}
 
 			.profile-img {
@@ -121,7 +134,7 @@
 			}
 
 			.about-text {
-				margin: 340px 0 0 0;
+				margin: 40px 0 0 0;
 			}
 
 			.about-text p {
@@ -139,7 +152,7 @@
 
 
 		/* story */
-			#black#story {
+			/* #black#story {
 				background-color: rgba(0,0,0,0.3);
 				position: absolute;
 				padding: 0 0 1040px 0;
@@ -148,48 +161,45 @@
 				bottom: 0;
 				left: 0;
 				z-index: 2;
-			}
+			} */
 
 			#story {
 				background-color: rgba(255,255,255,0.96);
 				position: absolute;
 				padding: 0 0 1040px 0;
 				box-shadow: 0px 0px 99px;
-				z-index: 3;
 				width: 88%;	
 				left: 0;
 			}
 
 
 		/* activity */
-			#black#activity {
+			/* #black#activity {
 				background-color: rgba(0,0,0,0.3);
 				position: absolute;
-				padding: 0 0 1040px 0;
+				padding: 0 0 100% 0;
 				top: 0;
 				right: 0;
 				bottom: 0;
 				left: 0;
 				z-index: 2;
-			}
+			} */
 
 			#activity {
 				background-color: rgba(255,255,255,0.96);
-				position: absolute;
-				padding: 0 0 1040px 0;
+				position: fixed;
+				padding: 0 0 100% 0;
 				box-shadow: 0px 0px 99px;
-				z-index: 3;
 				width: 88%;
 				right: 0;	
 				left: 0;
 				margin: auto;
+				overflow: hidden;
 			}
 
 			.activity-contents {
 				background-color: rgba(255,100,0,0.3);
-				position: absolute;
-				padding: 0 0 1040px 0;
-				z-index: 4;
+				position: fixed;
 				width: 840px;
 				right: 0;
 				left: 0;
@@ -197,22 +207,29 @@
 			}
 
 			.activity-list {
-				background-color: rgb(255,100,100);
-				position: absolute;
-				left: 0;
+				position: fixed;
+				overflow: scroll;
 				bottom: 0;
 				top: 0;
 				width: 260px;
-				z-index: 5;
+				padding:64px 0 128px 0;
+			}
+
+			.activity-list h3 {
+				margin-top: 3em;
+			}
+
+			.activity-list p {
+				margin: 0.1em 0 3em 0;
 			}
 
 			.activity-detail {
-				background-color: rgb(100,255,255);
-				position: absolute;
-				right: 0;
+				background-color: rgb(20,20,20);
+				position: fixed;
+				overflow: scroll;
+				margin-left:280px;
 				bottom: 0;
 				top: 0;
 				width: 560px;
-				z-index: 5;
 			}
 }
