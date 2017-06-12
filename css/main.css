@@ -15,7 +15,7 @@
 		h2 {
 			font-size: 40px;
 			letter-spacing:  0.03em;
-			margin: -0.2em 0 0 0;
+			margin: -0.15em 0 0 0;
 		}
 
 		h3 {
@@ -34,7 +34,7 @@
 			z-index: -1;
 		}
 
-		.btn {
+		#btn {
 			top: 0;
 			right: 0;
 			bottom: 0;
@@ -44,7 +44,7 @@
 			position: fixed;
 		}
 
-		.btn a {
+		#btn a {
 			color: #FFA400;
 			font-size: 2.2vw;
 			letter-spacing: 0.05em;
@@ -94,17 +94,6 @@
 
 
 		/* about */
-			/* #black #about {
-				background-color: rgba(0,0,0,0.3);
-				position: absolute;
-				padding: 0 0 1400px 0;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: 2;
-			} */
-
 			#about {
 				background-color: rgba(255,255,255,0.96);
 				position: absolute;
@@ -152,17 +141,6 @@
 
 
 		/* story */
-			/* #black#story {
-				background-color: rgba(0,0,0,0.3);
-				position: absolute;
-				padding: 0 0 1040px 0;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: 2;
-			} */
-
 			#story {
 				background-color: rgba(255,255,255,0.96);
 				position: absolute;
@@ -174,25 +152,15 @@
 
 
 		/* activity */
-			/* #black#activity {
-				background-color: rgba(0,0,0,0.3);
-				position: absolute;
-				padding: 0 0 100% 0;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: 2;
-			} */
-
 			#activity {
 				background-color: rgba(255,255,255,0.96);
 				position: fixed;
-				padding: 0 0 100% 0;
 				box-shadow: 0px 0px 99px;
 				width: 88%;
+				top: 0;
 				right: 0;	
 				left: 0;
+				bottom: 0;
 				margin: auto;
 				overflow: hidden;
 			}
@@ -203,10 +171,11 @@
 				width: 840px;
 				right: 0;
 				left: 0;
+				bottom: 0;
 				margin: 0 auto;
 			}
 
-			.activity-list {
+			#activity-list {
 				position: fixed;
 				overflow: scroll;
 				bottom: 0;
@@ -215,16 +184,16 @@
 				padding:64px 0 128px 0;
 			}
 
-			.activity-list h3 {
+			#activity-list h3 {
 				margin-top: 3em;
 			}
 
-			.activity-list p {
+			#activity-list p {
 				margin: 0.1em 0 3em 0;
 			}
 
-			.activity-detail {
-				background-color: rgb(20,20,20);
+			#activity-detail {
+				background-color: #FFFFFF;
 				position: fixed;
 				overflow: scroll;
 				margin-left:280px;
