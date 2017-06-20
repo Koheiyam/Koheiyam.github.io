@@ -74,7 +74,7 @@
 
 		#black {
 			background-color: rgba(0,0,0,0.3);
-			position: absolute;
+			position: fixed;
 			padding: 0 0 100% 0;
 			top: 0;
 			right: 0;
@@ -88,22 +88,28 @@
 			left: 0;
 			top: 0px;
 			bottom: 0;
-			margin: 256px auto 128px auto;
+			margin: 0 auto;
 			width: 740px;
+			position: fixed;
+			overflow: scroll;
 		}
 
 
 		/* about */
 			#about {
 				background-color: rgba(255,255,255,0.96);
-				position: absolute;
+				position: fixed;
 				box-shadow: 0px 0px 99px;
 				width: 88%;	
+				top: 0;
 				right: 0;
+				bottom: 0;
+				overflow: hidden;
 			}
 
 			.profile {
 				overflow: hidden;
+				margin-top: 256px;
 			}
 
 			.profile-img {
@@ -123,7 +129,7 @@
 			}
 
 			.about-text {
-				margin: 40px 0 0 0;
+				margin: 40px 0 128px 0;
 			}
 
 			.about-text p {
