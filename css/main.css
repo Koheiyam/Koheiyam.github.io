@@ -172,7 +172,6 @@
 			}
 
 			.activity-contents {
-				background-color: rgba(255,100,0,0.3);
 				position: fixed;
 				width: 840px;
 				right: 0;
@@ -207,4 +206,13 @@
 				top: 0;
 				width: 560px;
 			}
+
+			#activity-detail article {
+				width: 520px;
+				margin: 64px auto;
+			}
+
+			#activity-detail img {
+			 	width: 520px;
+			 }
 }
