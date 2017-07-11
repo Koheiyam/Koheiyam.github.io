@@ -209,10 +209,13 @@
 
 			#activity-detail article {
 				width: 520px;
-				margin: 64px auto;
+				margin: 0 auto;
+				padding: 128px 0;
 			}
 
 			#activity-detail img {
 			 	width: 520px;
 			 }
 }
+
+/*lazyload*/
