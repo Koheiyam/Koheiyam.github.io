@@ -1,5 +1,5 @@
 // home -> contents
-$('#btn div a').on("click touchend", function(){
+$('#btn div a, #spBtn div a').on("click touchend", function(){
 	$('#black').fadeIn('fast');
 	$('#black section').hide();
     $($(this).attr('href')).fadeToggle('fast');

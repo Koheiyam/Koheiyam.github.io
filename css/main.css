@@ -1,4 +1,4 @@
-@media (min-width: 1024px) and (min-aspect-ratio: 8/5){
+@media (max-width: 767px){
 
 	/* General */
 		html,body {
@@ -23,13 +23,78 @@
 			margin: 20px 0px 16px 0px;
 		}
 
+		.spNone {
+			display: none;
+		}
+
+	/* background */
+		.bg-img {
+			width: 100%;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+
+	/* menu button */
+		#spBtn {
+			background-color: #201515;
+			box-shadow:0px 0px 24px 2px #201515;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 64px;
+			z-index: 4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn {
+		}
+
+		#spBtn img {
+			width: 24%;
+		}
+
+	/* contents base */
+
+
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 8/5){
+
+	/* General */
+		html,body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+		}
+
+		h2,h3,p,a {
+			font-family: "arial";
+			color: #303030
+		}
+
+		h2 {
+			font-size: 40px;
+			letter-spacing:  0.03em;
+			margin: -0.15em 0 0 0;
+		}
+
+		h3 {
+			font-size: 20px;
+			margin: 20px 0px 16px 0px;
+		}
+		.dtNone {
+			display: none;
+		}
+
 
 
 	/* Home background */
-
 		.bg-img {
 			width: 100%;
-			background-position: top;
 			position: fixed;
 			z-index: -1;
 		}
@@ -75,7 +140,6 @@
 		#black {
 			background-color: rgba(0,0,0,0.3);
 			position: fixed;
-			padding: 0 0 100% 0;
 			top: 0;
 			right: 0;
 			bottom: 0;

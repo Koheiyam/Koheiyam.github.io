@@ -6,15 +6,17 @@
 <link href="css/main.css" rel="stylesheet">
 <link rel="icon" href="img/favicon.ico">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="js/lazysizes.min.js" async=""></script> -->
 </head>
-<script src="js/lazysizes.min.js" async=""></script>
 
 <body>
 	<!-- home background-->
-		<img class="bg-img" src="img/bg.png" alt="bg" />
-
+		<img class="bg-img spNone" src="img/bg.png" alt="bg" />
+		<img class="bg-img dtNone" src="img/bg-length.png" alt="bg" />
+		
 		<!-- button -->
-		<section id="btn">
+		
+		<section id="btn" class="spNone">
 			<div class="btn btn-left">
 				<a href="#about">About</a>
 			</div>
@@ -25,6 +27,17 @@
 				<a href="#story">Story</a>
 			</div>
 		</section>
+		<section id="spBtn" class="dtNone">
+			<div class="btn btn-left">
+				<a href="#about"><img src="img/btn/about-icon.png"></a>
+			</div>
+			<div class="btn btn-center">
+				<a href="#activity"><img src="img/btn/work-icon.png"></a>
+			</div>
+			<div class="btn btn-right">
+				<a href="#story"><img src="img/btn/story-icon.png"></a>
+			</div>
+		</section> 
 
 
 
