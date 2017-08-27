@@ -83,6 +83,66 @@
 				color: #FFA400;
 			}
 
+		/* activity */
+			#activity {
+				background-color: rgba(255,255,255,0.96);
+				position: fixed;
+				box-shadow: 0px 0px 99px;
+				width: 88%;
+				top: 0;
+				right: 0;	
+				left: 0;
+				bottom: 0;
+				margin: auto;
+				overflow: hidden;
+			}
+
+			.activity-contents {
+				position: fixed;
+				width: 320px;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				margin: 0 auto;
+			}
+
+			#activity-list {
+				position: fixed;
+				overflow: scroll;
+				bottom: 0;
+				top: 0;
+				width: 260px;
+				padding:64px 0 128px 0;
+			}
+
+			#activity-list h3 {
+				margin-top: 3em;
+			}
+
+			#activity-list p {
+				margin: 0.1em 0 3em 0;
+			}
+
+			#activity-detail {
+				background-color: rgba(99,22,11,0.2);
+				position: fixed;
+				overflow: scroll;
+				margin-left: 30px;
+				bottom: 0;
+				top: 0;
+				width: 90%;
+			}
+
+			#activity-detail article {
+				width: 520px;
+				margin: 0 auto;
+				padding: 128px 0;
+			}
+
+			#activity-detail img {
+			 	width: 520px;
+			 }
+
 
 /* Smartphone */
 @media (max-width: 1023px){
