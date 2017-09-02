@@ -1,12 +1,12 @@
 // home -> contents
-$('#btn div a, #spBtn div a').on("click touchend", function(){
-	$('#black').fadeIn('fast');
-	$('#black section').hide();
+$('#top div a').on("click touchend", function(){
+	$('#container').fadeIn('fast');
+	$('#container section').hide();
     $($(this).attr('href')).fadeToggle('fast');
 });
 $(document).on('click touchend', function() {
-  if (!$(event.target).closest('.contents, #activity-list, #activity-detail, #btn div a, #spBtn div a').length) {
-    $('#black').fadeOut('fast');
+  if (!$(event.target).closest('#top div a').length) {
+    /* $('#container').fadeOut('fast'); */
   }
 });
 $(function(){
