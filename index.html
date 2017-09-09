@@ -5,8 +5,9 @@
 <title>Kohei Yamamoto</title>
 <link href="css/main.css" rel="stylesheet">
 <link rel="icon" href="img/favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="js/jquery.pjax.js"></script>
 </head>
 
 <body>
@@ -31,27 +32,27 @@
 					<!-- list -->
 					<ul class="list">
 						<li>
-							<a href="#yam1"><img src="img/unca/unca-s.png"></a>
+							<a href="yam/unca.html"><img src="img/unca/unca-s.png" alt="unca"></a>
 							<p>CI / VI</p>
 						</li>
 						<li>
-							<a href="#yam2"><img src="img/profile/profile.jpg"></a>
+							<a href="yam/"><img src="img/profile/profile.jpg" alt=""></a>
 							<p>Typeface</p>
 						</li>
 						<li>
-							<a href="#yam3"><img src="img/profile/profile.jpg"></a>
+							<a href="#"><img src="img/profile/profile.jpg"></a>
 							<p>Site</p>
 						</li>
 						<li>
-							<a href="#yam4"><img src="img/identity/identity.png"></a>
+							<a href="yam/identity.html"><img src="img/identity/identity-s.png"></a>
 							<p>Identity</p>
 						</li>
 						<li>
-							<a href="#yam5"><img src="img/retouch/retouch.png"></a>
+							<a href="yam/retouch.html"><img src="img/retouch/retouch.png"></a>
 							<p>Retouch</p>
 						</li>
 						<li>
-							<a href="#yam6"><img src="img/profile/profile.jpg"></a>
+							<a href="yam/mathematics.html"><img src="img/profile/profile.jpg"></a>
 							<p>Mathematics</p>
 						</li>
 					</ul>
@@ -60,34 +61,6 @@
 					<article class="intro">
 						<h3>ご依頼について</h3>
 						<p>ロゴ、名刺のデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br><br>koh.yam.cntct[=ω=]gmail.com</p>
-					</article>
-
-					<!-- detail -->
-					<article class="detail">
-						<article id="yam1" style="display: none;">
-							<img src="#">
-							<p></p>
-						</article>
-						<article id="yam2" style="display: none;">
-							<img src="#">
-							<p></p>
-						</article>
-						<article id="yam3" style="display: none;">
-							<img src="#">
-							<p></p>
-						</article>
-						<article id="yam4" style="display: none;">
-							<img src="#">
-							<p></p>
-						</article>
-						<article id="yam5" style="display: none;">
-							<img src="#">
-							<p></p>
-						</article>
-						<article id="yam6" style="display: none;">
-							<img src="#">
-							<p></p>
-						</article>
 					</article>
 
 					<!-- SNS btn -->
@@ -117,17 +90,19 @@
 						<p>ロゴ、CDジャケットのデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br><br>sympathizer.records[=ω=]gmail.com</p>
 					</article>
 
-					<!-- detail -->
-					<article class="detail">
-						<article id="sch1" style="display: none;">
-							<img src="#">
-							<p></p>
-						</article>
-					</article>
-
 					<!-- SNS btn -->
 				</div>
 			</section>
 		</div>
 		<script src="js/main.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.js"></script>
+		<script>
+			$(function(){
+			    $.pjax({
+			        area : '#container',
+			        link : 'a:not([target])'
+			    });
+			});
+		</script>
 </body>

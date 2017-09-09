@@ -18,4 +18,10 @@ $(function(){
 });
 
 
-//lazyload
+//pjax
+$(function(){
+    $.pjax({
+        area : '#container',
+        link : 'a:not([target])'
+    });
+});
