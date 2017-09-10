@@ -93,43 +93,6 @@
 			margin: -0.56em 0 72px 0;
 		}
 
-	/* detail */
-		.detail {
-			height: 100%;
-			margin: auto auto;
-			max-width: 672px;
-			background-color: #FFF;
-		}
-
-		.detail p {
-			margin: auto;
-			width: 75%;
-
-		}
-
-		.detail h3 {
-			font-size: 40px;
-			margin: 0 auto 40px auto;
-			width: 75%;
-
-		}
-
-		.detail h4 {
-			font-size: 32px;
-			margin: 64px auto 32px auto;
-			width: 75%
-		}
-
-		.detail img {
-			width: 100%;
-		}
-
-		.detail article {
-			padding: 160px 0px;
-			margin: ;
-		}
-
-
 /* SmartPhone */
 @media (max-width: 767px){
 	/* Top */
