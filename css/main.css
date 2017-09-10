@@ -5,11 +5,6 @@
 			margin: 0;
 		}
 
-		@font-face {
-		  font-family: 'ヒラギノUD明朝Std';
-		  src: url('font/ヒラギノUD明朝-Std-W4.woff') format('woff');
-		}
-
 		h2,h3,h4,p,a {
 			font-family: "arial";
 			color: #303030
@@ -75,7 +70,7 @@
 		.intro p,.intro h3{
 			max-width: 64%;
 			margin: auto;
-			font-family: 'ヒラギノUD明朝Std';
+			font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
 		}
 
 	/* list */
