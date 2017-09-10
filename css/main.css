@@ -5,6 +5,11 @@
 			margin: 0;
 		}
 
+		@font-face {
+		  font-family: 'ヒラギノUD明朝Std';
+		  src: url('font/ヒラギノUD明朝-Std-W4.woff') format('woff');
+		}
+
 		h2,h3,h4,p,a {
 			font-family: "arial";
 			color: #303030
@@ -16,7 +21,7 @@
 
 		p {
 			font-size: 14px;
-			line-height: 25px;
+			line-height: 20px;
 		}
 
 	/* Top */
@@ -48,33 +53,34 @@
 			margin-bottom: 96px;
 		}
 
-		.yam-bg {
-			background-image: url(../img/yam.png);
+		.bg {
 			background-repeat: no-repeat;
 			background-position: center center;
 			background-attachment: fixed;
+		}
+
+		.yam-bg {
+			background-image: url(../img/yam.png);
 		}
 
 		.sch-bg {
 			background-image: url(../img/nyan_with.png);
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-attachment: fixed;
 		}
 
 		.intro {
 			background-color: rgba(255,255,255,0.9);
+			padding: 1em 0;
 		}
 
 		.intro p,.intro h3{
 			max-width: 64%;
 			margin: auto;
+			font-family: 'ヒラギノUD明朝Std';
 		}
 
 	/* list */
 		ul {
 			padding: 0;
-			margin-top: 180px;
 			display: table;
 			width: 80%;
 		}
@@ -109,7 +115,8 @@
 		}
 
 		.list li {
-			width: 100%;
+			padding: auto;
+			width: 240px;
 			clear: both;
 		}
 
@@ -141,6 +148,7 @@
 
 	/* list */
 		ul {
+			margin-top: 180px;
 			margin-left: 16%;
 			margin-bottom: 40px;
 		}

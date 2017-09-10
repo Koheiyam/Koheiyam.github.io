@@ -5,8 +5,13 @@
 			margin: 0;
 		}
 
+		@font-face {
+		  font-family: 'ヒラギノUD明朝Std';
+		  src: url('font/ヒラギノUD明朝-Std-W4.woff') format('woff');
+		}
+
 		h2,h3,h4,p,a {
-			font-family: "arial";
+			font-family: "ヒラギノUD明朝Std";
 			color: #303030
 		}
 
