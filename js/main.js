@@ -19,9 +19,6 @@ $(function(){
 
 
 //pjax
-$(function(){
-    $.pjax({
-        area : '#container',
-        link : 'a:not([target])'
-    });
-});
+if ($.support.pjax) {
+  $(document).pjax('a[data-pjax]', '#pjax-container')
+}
