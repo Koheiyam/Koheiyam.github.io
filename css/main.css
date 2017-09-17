@@ -59,11 +59,11 @@
 		}
 
 		.yam-bg {
-			background-image: url(../img/yam.png);
+			background-image: url(../img/yam/yam.png);
 		}
 
 		.sch-bg {
-			background-image: url(../img/nyan_with.png);
+			background-image: url(../img/sch/nyan_with.png);
 		}
 
 		.intro {
@@ -162,3 +162,30 @@
 			clear: both;
 		}
 }
+
+/* detail */
+	.detail {
+		height: 100%;
+		margin: auto auto;
+		max-width: 672px;
+		background-color: rgba(255,255,255,0.9);
+	}
+
+	.detail h3,.detail h4 {
+		font-family: "arial";
+		color: #303030
+	}
+
+	.detail p,.detail h3,.detail h4 {
+		width: 75%;
+
+	}
+	
+	.detail img {
+		width: 100%;
+	}
+
+	.detail article {
+		padding: 160px 0px;
+		margin: ;
+	}

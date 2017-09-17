@@ -3,121 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <title>Kohei Yamamoto</title>
-<link href="css/main.css" rel="stylesheet">
-<link rel="icon" href="img/favicon.ico">
+<link rel="icon" href="../img/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<style type="text/css">
+	/* common */
+		#top {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+		}
 
-    <script>
-	    if (!window.ga) {
-	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		.btn {
+			margin: auto;
+		}
 
-	        ga('create', 'UA-56791268-2', 'auto');
-	        ga('send', 'pageview');
-	    }
-	    ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.location.search);
-	</script>
+		#top .btn {
+			margin: auto;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		p {
+			font-family: 'arial';
+			letter-spacing: 2.8px;
+			color: #303030;
+			width: 100%;
+		}
+
+	/* SmartPhone */
+	@media (max-width: 767px){
+		.spNone {
+			display: none;
+		}
+
+		.btn {
+			padding-top: 24%;
+		}
+
+		#top .btn {
+			width: 320px;
+		}
+
+		p{
+			text-align: center;
+			font-size: 32px;
+			margin-bottom: -16px;
+		}
+	}
+	/* DeskTop */
+	@media (min-width: 768px){
+		.btn {
+			padding-top: 24%;
+
+		}	
+
+		#top .btn {
+			width: 600px;
+		}
+
+		#top .btn div {
+			text-align: center;
+			float: left;
+		}
+
+		p {
+			margin: 0px 12px;
+			font-size: 48px;
+		}
+
+	}
+</style>
 </head>
 
 <body>
 	<!-- Top -->
 		<section id="top">
 			<div class="btn">
-				<div><a href="#yam"><p>yamamoto</p></a></div>
+				<div><a href="../yam/index.html" class="pjaxLink"><p>yamamoto</p></a></div>
 				<div><p class="spNone">|</p></div>
-				<div><a href="#sch"><p>schöneco</p></a></div>
+				<div><a href="../sch/index.html" class="pjaxLink"><p>schöneco</p></a></div>
 			</div>
 		</section>
-
-	<!-- yam -->
-	<div id="pjax-container">
-		<div id="container">
-			<section id="yam" style="display: block;"> <!-- none <-> block -->
-				<div class="bg yam-bg">
-					<!-- intro -->
-					<article class="intro">
-						<p>
-							ヤマモト　コウヘイ<br><br>
-							1996年生。シンガポール、数学科を経て東洋美術学校に在学中。 <br>
-							漠然としたイメージから確かな意味付けの追求とデザインを得意とし、時代の変化を捉えつつも、流行にながされない制作を手掛ける。
-						</p>
-					</article>
-
-					<!-- list -->
-					<ul class="list">
-						<li>
-							<a href="yam/unca.html" class="pjaxLink"><img src="img/unca/unca-s.png" alt="unca"></a>
-							<p>CI / VI</p>
-						</li>
-						<li>
-							<a href="yam/"><img src="img/profile/profile.jpg" alt=""></a>
-							<p>Typeface</p>
-						</li>
-						<li>
-							<a href="#"><img src="img/profile/profile.jpg"></a>
-							<p>Site</p>
-						</li>
-						<li>
-							<a href="yam/identity.html"><img src="img/identity/identity-s.png"></a>
-							<p>Identity</p>
-						</li>
-						<li>
-							<a href="yam/retouch.html"><img src="img/retouch/retouch.png"></a>
-							<p>Retouch</p>
-						</li>
-						<li>
-							<a href="yam/mathematics.html"><img src="img/profile/profile.jpg"></a>
-							<p>Mathematics</p>
-						</li>
-					</ul>
-
-					<!-- text -->
-					<article class="intro">
-						<h4>ご依頼について</h4>
-						<p>ロゴ、名刺のデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br><br>koh.yam.cntct[=ω=]gmail.com</p>
-					</article>
-
-					<!-- SNS btn -->
-				</div>
-			</section>
-		</div>
-	</div>
-
-	<!-- sch -->
-	<div id="pjax-container">
-		<div id="container">
-			<section id="sch" style="display: none;"> <!-- none <-> block -->
-				<div class="bg sch-bg">
-					<!-- intro -->
-					<article class="intro">
-						<p>
-							ショねこ / schöneco<br><br>
-							Sympathizer Recordsを主宰し、数々の音楽クリエイターとともに「光と水」をキーワードとした世界観を表現。その他サークルロゴデザインやジャケットデザイン制作を担当。
-						</p>
-					</article>
-
-					<!-- list -->
-					<ul class="list">
-						<li>
-							<a href="#sch1"><img src="img/symparec/jacket-s.jpg"></a>
-							<p>Sparkle</p>
-						</li>
-					</ul>
-
-					<article class="intro">
-						<h4>ご依頼について</h4>
-						<p>ロゴ、CDジャケットのデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br><br>sympathizer.records[=ω=]gmail.com</p>
-					</article>
-
-					<!-- SNS btn -->
-				</div>
-			</section>
-		</div>
-	</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.pjax.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
 </body>
