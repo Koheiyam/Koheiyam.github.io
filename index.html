@@ -5,6 +5,73 @@
 <title>Kohei Yamamoto</title>
 <link rel="icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.textillate.js"></script>
+<script type="text/javascript" src="jquery.lettering.js"></script>
+<script type="text/javascript">
+	$(function () {
+		// start
+    	$('.title-1').textillate({
+    		initialDelay: 360,
+    		autoStart: true,
+    		in: {
+    			effect:'fadeInLeft',
+    			delayScale: 3,
+    			delay: 20,
+    			sync: false,
+    			shuffle: false
+    		}
+    	});
+
+    	$('.spNone').textillate({
+    		initialDelay: 620,
+    		autoStart: true,
+    		in: {
+    			effect:'flipInX',
+    			sync: false,
+    			shuffle: false
+    		}
+    	});
+
+    	$('.title-2').textillate({
+    		initialDelay: 480,
+    		autoStart: true,
+    		in: {
+    			effect:'fadeInLeft',
+    			delayScale: 3,
+    			delay: 20,
+    			sync: false,
+    			shuffle: false
+    		}
+    	});
+
+    	//click
+    	$('.title-1').on("click touchend", function(){
+    		$(this).not(":animated").textillate({
+    			initialDelay: 120,
+    			autoStart: false,
+    			out: {
+    				effect:'fadeOutRight',
+    				delayScale: 3,
+    				delay: 20,
+    				sync: false,
+    				shuffle: false
+    			}
+    		}),
+    		$(this).textillate({
+    			initialDelay: 500,
+    			autoStart: false,
+    			out: {
+    				effect: 'fadeOut',
+    				delayScale: 3,
+    				sync: true,
+    				shuffle: false
+    			}
+    		})
+    	});
+    });
+</script>
 <style type="text/css">
 	/* common */
 		#top {
@@ -30,6 +97,25 @@
 			letter-spacing: 2.8px;
 			color: #303030;
 			width: 100%;
+			position: relative;
+			display: inline-block;
+			text-align: center;
+		}
+
+		p:not(.spNone):before:active{
+		  position: absolute;
+		  top: 1.3em;
+		  left: 2.05em;
+		  content: "";
+		  display: inline-block;
+		  width: 0;
+		  height: 3px;
+		  background: #303030;
+		  transition: 0.2s;
+		}
+
+		p:not(.spNone):hover:before:active{
+		  width: 20%;
 		}
 
 	/* SmartPhone */
@@ -43,11 +129,10 @@
 		}
 
 		#top .btn {
-			width: 320px;
+			width: 300px;
 		}
 
 		p{
-			text-align: center;
 			font-size: 32px;
 			margin-bottom: -16px;
 		}
@@ -60,11 +145,10 @@
 		}	
 
 		#top .btn {
-			width: 600px;
+			width: 564px;
 		}
 
 		#top .btn div {
-			text-align: center;
 			float: left;
 		}
 
@@ -81,9 +165,9 @@
 	<!-- Top -->
 		<section id="top">
 			<div class="btn">
-				<div><a href="yam/index.html" class="pjaxLink"><p>yamamoto</p></a></div>
+				<div><a href="yam/index.html"><p class="title title-1">yamamoto</p></a></div>
 				<div><p class="spNone">|</p></div>
-				<div><a href="sch/index.html" class="pjaxLink"><p>schöneco</p></a></div>
+				<div><a href="sch/index.html"><p class="title title-2">schöneco</p></a></div>
 			</div>
 		</section>
 </body>
