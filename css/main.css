@@ -54,6 +54,7 @@
 		}
 
 		.bg::before {  
+			background-image: url(../yam/img/yam.png);
 			display: block;
 			position: fixed;
 			background-repeat: no-repeat;
@@ -65,11 +66,11 @@
 			z-index: -1;
 			top: 240px;
 		}
-
+/*
 		.yam-bg::before {
 			background-image: url(../yam/img/yam.png);
 		}
-
+*/
 		.sch-bg::before {
 			background-image: url(../sch/img/nyan_with.png);
 		}
