@@ -102,22 +102,6 @@
 			text-align: center;
 		}
 
-		p:not(.spNone):before{
-		  position: absolute;
-		  top: 1.3em;
-		  left: 2.05em;
-		  content: "";
-		  display: inline-block;
-		  width: 0;
-		  height: 3px;
-		  background: #303030;
-		  transition: 0.2s;
-		}
-
-		p:not(.spNone):hover:before{
-		  width: 20%;
-		}
-
 	/* SmartPhone */
 	@media (max-width: 767px){
 		.spNone {
@@ -153,10 +137,32 @@
 		}
 
 		p {
-			margin: 0px 12px;
+			margin: 0px 10px;
 			font-size: 48px;
 		}
 
+		p:not(.spNone):before {
+			position: absolute;
+			top: 1.5em;
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 3px;
+			background: #303030;
+			transition: 0.2s;
+		}
+
+		.title-1:before {
+			left: 2.35em;
+		}
+
+		.title-2:before {
+			left: 2.05em;
+		}
+
+		p:not(.spNone):hover:before {
+		  width: 20%;
+		}
 	}
 </style>
 </head>
@@ -165,9 +171,9 @@
 	<!-- Top -->
 		<section id="top">
 			<div class="btn">
-				<div><a href="yam/index.html"><p class="title title-1">yamamoto</p></a></div>
+				<div><a href="yam/index.html"><p class="title-1">yamamoto</p></a></div>
 				<div><p class="spNone">|</p></div>
-				<div><a href="sch/index.html"><p class="title title-2">schöneco</p></a></div>
+				<div><a href="sch/index.html"><p class="title-2">schöneco</p></a></div>
 			</div>
 		</section>
 </body>
