@@ -48,19 +48,8 @@
 
     	//click
     	$('.title-1').on("click touchend", function(){
-    		$(this).not(":animated").textillate({
-    			initialDelay: 120,
-    			autoStart: false,
-    			out: {
-    				effect:'fadeOutRight',
-    				delayScale: 3,
-    				delay: 20,
-    				sync: false,
-    				shuffle: false
-    			}
-    		}),
-    		$(this).textillate({
-    			initialDelay: 500,
+    		$('.btn').textillate({
+    			initialDelay: 0,
     			autoStart: false,
     			out: {
     				effect: 'fadeOut',
@@ -141,28 +130,29 @@
 			font-size: 48px;
 		}
 
-		p:not(.spNone):before {
-			position: absolute;
-			top: 1.5em;
-			content: "";
-			display: inline-block;
-			width: 0;
-			height: 3px;
-			background: #303030;
-			transition: 0.2s;
-		}
+		/* underline-animation */
+			p:not(.spNone):before {
+				position: absolute;
+				top: 1.5em;
+				content: "";
+				display: inline-block;
+				width: 0;
+				height: 3px;
+				background: #303030;
+				transition: 0.2s;
+			}
 
-		.title-1:before {
-			left: 2.35em;
-		}
+			.title-1:before {
+				left: 2.35em;
+			}
 
-		.title-2:before {
-			left: 2.05em;
-		}
+			.title-2:before {
+				left: 2.05em;
+			}
 
-		p:not(.spNone):hover:before {
-		  width: 20%;
-		}
+			p:not(.spNone):hover:before {
+			  width: 20%;
+			}
 	}
 </style>
 </head>
