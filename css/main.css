@@ -99,7 +99,7 @@
 		}
 
 	/* bg */
-		.yam-bg::before, .sch-bg::before {  
+/*		.yam-bg::before, .sch-bg::before {  
 			display: block;
 			position: fixed;
 			background-repeat: no-repeat;
@@ -120,7 +120,7 @@
 			top: -64px;
 			background-image: url(../sch/img/nyan_with.png);
 		}
-
+*/
 	/* list */
 		ul {
 			margin: 16%;
@@ -159,17 +159,26 @@
 		}
 
 	/* bg */
-		.bg {
+		.yam-bg::before, .sch-bg::before {  
+			display: block;
+			position: fixed;
 			background-repeat: no-repeat;
 			background-position: center center;
-			background-attachment: fixed; 
+			background-attachment: fixed;
+			content: "";
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+
 		}
 
-		.yam-bg {
+		.yam-bg::before {
+			top: -64px;
 			background-image: url(../yam/img/yam.png);
 		}
 
-		.sch-bg {
+		.sch-bg::before {
+			top: -64px;
 			background-image: url(../sch/img/nyan_with.png);
 		}
 
