@@ -108,18 +108,19 @@
 			width: 100%;
 			height: 100%;
 			z-index: -1;
-			left: 0;
 
 		}
 
 		.yam-bg::before {
+			top: -64px;
 			background-image: url(../yam/img/yam.png);
 		}
 
 		.sch-bg::before {
+			top: -64px;
 			background-image: url(../sch/img/nyan_with.png);
 		}
-		
+
 	/* list */
 		ul {
 			margin: 16%;
