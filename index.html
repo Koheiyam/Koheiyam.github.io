@@ -6,61 +6,6 @@
 <link rel="icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="animate.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.textillate.js"></script>
-<script type="text/javascript" src="jquery.lettering.js"></script>
-<script type="text/javascript">
-	$(function () {
-		// start
-    	$('.title-1').textillate({
-    		initialDelay: 360,
-    		autoStart: true,
-    		in: {
-    			effect:'fadeInLeft',
-    			delayScale: 3,
-    			delay: 20,
-    			sync: false,
-    			shuffle: false
-    		}
-    	});
-
-    	$('.spNone').textillate({
-    		initialDelay: 620,
-    		autoStart: true,
-    		in: {
-    			effect:'flipInX',
-    			sync: false,
-    			shuffle: false
-    		}
-    	});
-
-    	$('.title-2').textillate({
-    		initialDelay: 480,
-    		autoStart: true,
-    		in: {
-    			effect:'fadeInLeft',
-    			delayScale: 3,
-    			delay: 20,
-    			sync: false,
-    			shuffle: false
-    		}
-    	});
-
-    	//click
-//    	$('.title-1').on("click touchend", function(){
-//    		$('.btn').textillate({
-//    			initialDelay: 0,
-//    			autoStart: false,
-//    			out: {
-//    				effect: 'fadeOut',
-//    				delayScale: 3,
-//    				sync: true,
-//    				shuffle: false
-//    			}
-//    		})
-//    	});
-	});
-</script>
 <style type="text/css">
 	/* common */
 		#top {
@@ -147,7 +92,7 @@
 			}
 
 			.title-2:before {
-				left: 2.05em;
+				left: 2em;
 			}
 
 			p:not(.spNone):hover:before {
@@ -166,4 +111,59 @@
 				<div><a href="sch/index.html"><p class="title-2">schöneco</p></a></div>
 			</div>
 		</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.textillate.js"></script>
+	<script type="text/javascript" src="jquery.lettering.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			// start
+	    	$('.title-1').textillate({
+	    		initialDelay: 360,
+	    		autoStart: true,
+	    		in: {
+	    			effect:'fadeInLeft',
+	    			delayScale: 3,
+	    			delay: 20,
+	    			sync: false,
+	    			shuffle: false
+	    		}
+	    	});
+
+	    	$('.spNone').textillate({
+	    		initialDelay: 620,
+	    		autoStart: true,
+	    		in: {
+	    			effect:'flipInX',
+	    			sync: false,
+	    			shuffle: false
+	    		}
+	    	});
+
+	    	$('.title-2').textillate({
+	    		initialDelay: 480,
+	    		autoStart: true,
+	    		in: {
+	    			effect:'fadeInLeft',
+	    			delayScale: 3,
+	    			delay: 20,
+	    			sync: false,
+	    			shuffle: false
+	    		}
+	    	});
+
+	    	//click
+	//    	$('.title-1').on("click touchend", function(){
+	//    		$('.btn').textillate({
+	//    			initialDelay: 0,
+	//    			autoStart: false,
+	//    			out: {
+	//    				effect: 'fadeOut',
+	//    				delayScale: 3,
+	//    				sync: true,
+	//    				shuffle: false
+	//    			}
+	//    		})
+	//    	});
+		});
+	</script>
 </body>
