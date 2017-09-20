@@ -40,6 +40,22 @@
 			text-decoration: none;
 		}
 
+		/* top-animation */
+			#top {
+			    animation-duration: 1.5s;
+			    animation-name: slidein;
+			}
+
+			@keyframes slidein {
+			    from {
+			        margin-top: -100px;
+			    }
+
+			    to {
+			        margin-bottom: 0%;
+			    }
+			}
+
 	/* container */
 		#container {
 			max-width: 896px;
@@ -66,7 +82,7 @@
 			font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',serif;
 		}
 
-		/* container animation */
+		/* container-animation */
 			#container {
 			    animation: fadeIn 2s ease 0s 1 normal;
 			    -webkit-animation: fadeIn 2s ease 0s 1 normal;
