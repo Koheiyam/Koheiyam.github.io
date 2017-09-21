@@ -1,6 +1,6 @@
 $(function(){
     // yam <-> sch
-    $('#top').on('click',function(){
+    $('#top').on(click,function(){
         $.pjax({
             area : '#pjax-container', //再描画させるエリア
             link : '.pjaxLink', // pjaxを発動させるlinkにつけるclass
@@ -28,7 +28,7 @@ $(function(){
 
 
     // list <-> detail
-    $('li').on('click',function(){
+    $('li').on(click,function(){
         $.pjax({
             area : '#pjax-container-2', //再描画させるエリア
             link : '.pjaxLink', // pjaxを発動させるlinkにつけるclass
