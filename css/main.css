@@ -242,3 +242,30 @@
 		padding: 160px 0px;
 		margin: ;
 	}
+
+/* close icon */
+	.close {
+		position: fixed;
+		width: 75%;
+		height: 24px;
+		opacity: 0.8;
+		z-index: 1;
+	}
+	.close:hover {
+		opacity: 1;
+	}
+	.close:before, .close:after {
+		position: absolute;
+		top: -48px;
+		left: 24px;
+		content: ' ';
+		height: 24px;
+		width: 2px;
+		background-color: #CCC;
+	}
+	.close:before {
+		transform: rotate(45deg);
+	}
+	.close:after {
+		transform: rotate(-45deg);
+	}
