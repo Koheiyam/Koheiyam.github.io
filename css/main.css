@@ -83,7 +83,7 @@
 		}
 
 		/* container-animation */
-			#pjax-container {
+			#container {
 			    animation: fadeIn 2s ease 0s 1 normal;
 			    -webkit-animation: fadeIn 2s ease 0s 1 normal;
 			}
