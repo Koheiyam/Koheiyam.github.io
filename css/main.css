@@ -91,6 +91,7 @@
 			#container {
 			    animation: fadeIn 2s ease 0s 1 normal;
 			    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+			    animation-delay: 200s;
 			}
 
 			@keyframes fadeIn {
@@ -229,8 +230,14 @@
 	.detail p,.detail h3,.detail h4, .detail h5 {
 		width: 75%;
 	}
+
+	.detail h3 {
+		font-size: 48px;
+		margin-bottom: 64px;
+	}
 	
 	.detail p {
+		color: #666;
 		font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',serif;
 	}
 
@@ -239,7 +246,7 @@
 	}
 
 	.detail article {
-		padding: 160px 0px;
+		padding: 80px 0px;
 		margin: ;
 	}
 
@@ -268,3 +275,5 @@
 	.close:after {
 		transform: rotate(-45deg);
 	}
+
+/* now loading */
