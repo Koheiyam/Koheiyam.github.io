@@ -246,7 +246,6 @@
 /* close icon */
 	.close {
 		position: fixed;
-		width: 75%;
 		height: 24px;
 		opacity: 0.8;
 		z-index: 1;
