@@ -5,13 +5,18 @@
 			margin: 0;
 		}
 
-		h3,h4,p,a {
+		h3,h4,h5,p,a {
 			font-family: "arial";
 			color: #303030
 		}
 
 		h3,h4 {
 			font-size: 18px;
+			margin: 0 auto 12px auto;
+		}
+
+		h5 {
+			font-size: 16px;
 			margin: 0 auto 12px auto;
 		}
 
@@ -221,12 +226,7 @@
 		background-color: rgba(255,255,255,0.9);
 	}
 
-	.detail h3,.detail h4 {
-		font-family: "arial";
-		color: #303030
-	}
-
-	.detail p,.detail h3,.detail h4 {
+	.detail p,.detail h3,.detail h4, .detail h5 {
 		width: 75%;
 	}
 	
