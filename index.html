@@ -132,6 +132,7 @@
 			</div>
 		</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fademover.js"></script>
 	<script type="text/javascript" src="js/jquery.textillate.js"></script>
 	<script type="text/javascript" src="js/jquery.lettering.js"></script>
 	<script type="text/javascript">
@@ -171,19 +172,16 @@
 	    		}
 	    	});
 
-	    	//click
-	//    	$('.title-1').on("click touchend", function(){
-	//    		$('.btn').textillate({
-	//    			initialDelay: 0,
-	//    			autoStart: false,
-	//    			out: {
-	//    				effect: 'fadeOut',
-	//    				delayScale: 3,
-	//    				sync: true,
-	//    				shuffle: false
-	//    			}
-	//    		})
-	//    	});
+  	        $(function(){
+	            $('#top').fadeMover({
+	                'effectType': 3,
+	                'inSpeed': '0',
+	                'outSpeed': 300,
+	                'inDelay' : '0',
+	                'outDelay' : '0',
+	                'nofadeOut' : 'nonmover'
+	            });
+	        });
 		});
 	</script>
 </body>
