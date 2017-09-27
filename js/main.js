@@ -26,16 +26,7 @@ $(function(){
 
 
     // fadeMover
-        $(function(){
-            $('#pjax-container').fadeMover({
-                'effectType': 1,
-                'inSpeed': 800,
-                'outSpeed': 300,
-                'inDelay' : '0',
-                'outDelay' : '0',
-                'nofadeOut' : 'nonmover'
-            });
-        });
+
 });
 
     // yam <-> sch
