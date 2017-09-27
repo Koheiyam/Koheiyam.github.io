@@ -23,7 +23,7 @@ $(function(){
                 }
             }
         });
-});
+
 
     // fadeMover
         $(function(){
@@ -36,7 +36,7 @@ $(function(){
                 'nofadeOut' : 'nonmover'
             });
         });
-
+});
 
     // yam <-> sch
 
