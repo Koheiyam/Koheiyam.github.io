@@ -46,7 +46,7 @@
 		}
 
 		/* top-animation */
-			.btn {
+			#top {
 			    animation-duration: 1.2s;
 			    animation-name: slidein;
 			}
@@ -87,23 +87,6 @@
 			font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',serif;
 		}
 
-		/* container-animation */
-			#container {
-			    animation: fadeIn 2s ease 0s 1 normal;
-			    -webkit-animation: fadeIn 2s ease 0s 1 normal;
-			    animation-delay: 200s;
-			}
-
-			@keyframes fadeIn {
-			    0% {opacity: 0}
-			    100% {opacity: 1}
-			}
-
-			@-webkit-keyframes fadeIn {
-			    0% {opacity: 0}
-			    100% {opacity: 1}
-			}
-
 	/* list */
 		ul {
 			padding: 0;
@@ -135,6 +118,10 @@
 		#top {
 			padding: 8px 0;
 			border-bottom: #f0f0f0 solid 1px;
+		}
+
+		#top .btn {
+			width: 80%;
 		}
 
 		.btn p{
@@ -275,5 +262,3 @@
 	.close:after {
 		transform: rotate(-45deg);
 	}
-
-/* now loading */
