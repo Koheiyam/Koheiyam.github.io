@@ -33,7 +33,6 @@ $('a').click(function(){
                     }
                 }
             });
-        location.href = url;
     }, 300);
     }
     return false;
