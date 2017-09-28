@@ -46,7 +46,7 @@
 		}
 
 		/* top-animation */
-			#top {
+			.list-top {
 			    animation-duration: 1.2s;
 			    animation-name: slidein;
 			}
