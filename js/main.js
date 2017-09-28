@@ -1,7 +1,7 @@
 $(function(){
     // pjaxの設定
         $.pjax({
-            area : '#container', //再描画させるエリア
+            area : '#pjax-container', //再描画させるエリア
             link : '.pjaxLink', // pjaxを発動させるlinkにつけるclass
             ajax : { timeout: 2500 }, // ajaxの通信のタイムアウト時間
             wait : 200, // 押してから発動するまでの時間
@@ -27,7 +27,7 @@ $(function(){
 
     // fadeMover
         $(function(){
-            $('#pjax-container').fadeMover({
+            $('#container').fadeMover({
                 'effectType': 1,
                 'inSpeed': 800,
                 'outSpeed': 300,
