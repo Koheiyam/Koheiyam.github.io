@@ -27,7 +27,7 @@ $(function(){
 
     // fadeMover
         $(function(){
-            $('#pjax-container').fadeMover({
+            $('#container').fadeMover({
                 'effectType': 1,
                 'inSpeed': 800,
                 'outSpeed': 300,
@@ -37,12 +37,3 @@ $(function(){
             });
         });
 });
-
-    // yam <-> sch
-
-
-    // list <-> detail
-
-
-    // detail -> anotherTop
-// });
