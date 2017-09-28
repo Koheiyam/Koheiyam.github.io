@@ -1,15 +1,3 @@
-    // fadeMover
-        $(function(){
-            $('#container').fadeMover({
-                'effectType': 1,
-                'inSpeed': 800,
-                'outSpeed': 300,
-                'inDelay' : '0',
-                'outDelay' : '0',
-                'nofadeOut' : 'nonmover'
-            });
-        });
-
 $(function(){
     // pjaxの設定
         $.pjax({
@@ -34,5 +22,18 @@ $(function(){
                     }
                 }
             }
+        });
+
+
+    // fadeMover
+        $(function(){
+            $('#container').fadeMover({
+                'effectType': 1,
+                'inSpeed': 800,
+                'outSpeed': 300,
+                'inDelay' : '0',
+                'outDelay' : '0',
+                'nofadeOut' : 'nonmover'
+            });
         });
 });
