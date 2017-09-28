@@ -9,6 +9,7 @@ $('a').click(function(){
         // フェードアウトしてから、取得したURLにリンクする
         $('#pjax-container').fadeOut(300);
         setTimeout(function(){
+        location.href = url;
         // pjaxの設定
             $.pjax({
                 area : '#pjax-container', //再描画させるエリア
@@ -33,7 +34,6 @@ $('a').click(function(){
                     }
                 }
             });
-        location.href = url;
     }, 300);
     }
     return false;
