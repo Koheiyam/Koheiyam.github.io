@@ -172,16 +172,16 @@
 	    		}
 	    	});
 
-  	        $(function(){
-	            $('#top').fadeMover({
-	                'effectType': 3,
-	                'inSpeed': '0',
-	                'outSpeed': 300,
-	                'inDelay' : '0',
-	                'outDelay' : '0',
-	                'nofadeOut' : 'nonmover'
-	            });
-	        });
+			$('a').click(function(){
+			    var url = $(this).attr('href');
+			    if (url != '') {
+			        $('body').fadeOut(800);
+			        setTimeout(function(){
+			            location.href = url;
+			        }, 800);
+			    }
+			    return false;
+			});
 		});
 	</script>
 </body>

@@ -47,7 +47,7 @@
 
 		/* top-animation */
 			#top {
-			    animation-duration: 1.2s;
+			    animation-duration: 1200ms;
 			    animation-name: slidein;
 			}
 
