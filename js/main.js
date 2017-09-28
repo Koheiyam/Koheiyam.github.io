@@ -28,9 +28,4 @@ $(function(){
         $(document).bind('pjax:fetch', function() {
             $('#pjax-container').fadeOut(300);
         });
-
-    // fadeIn
-        $(document).bind('pjax:render', function() {
-            $('#pjax-container').fadeIn(800);
-        });
 });
