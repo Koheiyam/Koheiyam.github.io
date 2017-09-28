@@ -1,6 +1,3 @@
-$('#pjax-container').hide();
-$('#pjax-container').fadeIn(1000);
-
 $(function(){
     // pjaxの設定
         $.pjax({
