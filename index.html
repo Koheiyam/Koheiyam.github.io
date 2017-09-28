@@ -139,7 +139,7 @@
 		$(function () {
 			// start
 	    	$('.title-1').textillate({
-	    		initialDelay: 360,
+	    		initialDelay: 300,
 	    		autoStart: true,
 	    		in: {
 	    			effect:'fadeInLeft',
@@ -161,7 +161,7 @@
 	    	});
 
 	    	$('.title-2').textillate({
-	    		initialDelay: 480,
+	    		initialDelay: 420,
 	    		autoStart: true,
 	    		in: {
 	    			effect:'fadeInLeft',
@@ -175,10 +175,10 @@
 			$('a').click(function(){
 			    var url = $(this).attr('href');
 			    if (url != '') {
-			        $('body').fadeOut(800);
+			        $('body').fadeOut(500);
 			        setTimeout(function(){
 			            location.href = url;
-			        }, 800);
+			        }, 500);
 			    }
 			    return false;
 			});

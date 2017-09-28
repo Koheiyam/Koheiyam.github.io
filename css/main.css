@@ -47,17 +47,21 @@
 
 		/* top-animation */
 			#top {
-			    animation-duration: 1200ms;
+			    animation-duration: 1500ms;
 			    animation-name: slidein;
 			}
 
 			@keyframes slidein {
-			    from {
+			    0% {
 			        margin-top: -80px;
 			    }
 
-			    to {
-			        margin-bottom: 0%;
+			    45% {
+			    	margin-top: -80px;
+			    }
+
+			    100% {
+			        margin-bottom: 0px;
 			    }
 			}
 
@@ -89,16 +93,20 @@
 
 		/* container-animation */
 			#container {
-			    animation-duration: 1000ms;
+			    animation-duration: 1500ms;
 			    animation-name: fadein;
 			}
 
 			@keyframes fadein {
-			    from {
+			    0% {
 			        opacity: 0;
 			    }
 
-			    to {
+			    40% {
+			    	opacity: 0;
+			    }
+
+			    100% {
 			        opacity: 1;
 			    }
 			}
