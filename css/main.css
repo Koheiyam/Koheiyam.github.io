@@ -269,12 +269,12 @@
 
 		.yam-bg::before {
 			top: -64px;
-			background-image: url(../yam/img/yam.png);
+			background-image: url(../img/yam/yam.png);
 		}
 
 		.sch-bg::before {
 			top: -64px;
-			background-image: url(../sch/img/nyan_with.png);
+			background-image: url(../img/sch/nyan_with.png);
 		}
 
 	/* list */
