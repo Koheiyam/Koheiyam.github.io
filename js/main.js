@@ -28,11 +28,4 @@ $(function(){
         $(document).bind('pjax:fetch', function() {
             $('#pjax-container').fadeOut(300);
         });
-
-    // ajax-analytics解析
-        $(document).ready(function(){
-            $(document).ajaxSuccess(function(event, xhr, settings){
-                ga('send','pageview', settings.url);
-            });
-        });
 });
