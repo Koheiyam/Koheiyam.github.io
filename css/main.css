@@ -151,6 +151,7 @@
 
 		.detail h3 {
 			font-size: 48px;
+			letter-spacing: 0.04em;
 			margin-bottom: 64px;
 		}
 		
@@ -166,7 +167,15 @@
 
 		.detail article {
 			padding: 80px 0px;
-			margin: ;
+		}
+
+		.detail iframe {
+			margin-left: 12%;
+		}
+
+		.detail .full {
+			margin-left: 13%;
+			width: 74%;
 		}
 
 		/* close icon */

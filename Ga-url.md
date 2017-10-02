@@ -10,10 +10,11 @@
 		https://koheiyam.github.io/?utm_source=instagram&utm_medium=post
 
 	3. twitter
+		https://koheiyam.github.io/?utm_source=twitter&utm_medium=profile
 		https://koheiyam.github.io/?utm_source=twitter&utm_medium=post
 
 	4. introduction
-		https://koheiyam.github.io/?utm_source="#SiteName"&utm_medium=intro
+		https://koheiyam.github.io/?utm_source="SiteName"&utm_medium=intro
 
 ## parameters list
 	url: https://support.google.com/analytics/answer/1033863
