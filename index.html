@@ -9,6 +9,7 @@
 <title>Kohei Yamamoto</title>
 <link rel="icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="4;URL=yam/index.html">
 
 <!-- SNS -->
 <meta property="og:locale" content="ja_JP">
@@ -196,6 +197,26 @@
 				animation-name: fadeInLeft;
 			}
 
+			.btn {
+				animation-name: fadeOut;
+				animation-duration: 1500ms;
+				animation-delay: 3200ms;
+			}
+
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+
+				50% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 0;
+				}
+			}
+
 	/* common */
 		#top {
 			position: fixed;
@@ -203,16 +224,8 @@
 			height: 100%;
 		}
 
-		.btn {
+		.btn, .intro {
 			margin: auto;
-		}
-
-		#top .btn {
-			margin: auto;
-		}
-
-		a {
-			text-decoration: none;
 		}
 
 		p {
@@ -259,7 +272,6 @@
 			margin: 0px 10px;
 			font-size: 48px;
 		}
-
 		/* underline-animation */
 			p:not(.spNone):before {
 				position: absolute;
@@ -291,9 +303,9 @@
 	<!-- Top -->
 		<section id="top">
 			<div class="btn">
-				<div><a href="yam/index.html"><p class="title-1">yamamoto</p></a></div>
+				<div><p class="title-1">yamamoto</p></div>
 				<div><p class="spNone">|</p></div>
-				<div><a href="sch/index.html"><p class="title-2">schöneco</p></a></div>
+				<div><p class="title-2">schöneco</p></div>
 			</div>
 		</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -335,17 +347,6 @@
 	    			shuffle: false
 	    		}
 	    	});
-
-			$('a').click(function(){
-			    var url = $(this).attr('href');
-			    if (url != '') {
-			        $('body').fadeOut(500);
-			        setTimeout(function(){
-			            location.href = url;
-			        }, 500);
-			    }
-			    return false;
-			});
 		});
 	</script>
 </body>

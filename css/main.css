@@ -31,21 +31,39 @@
 		#top {
 			z-index: 1;
 			position: fixed;
-			background-color: #FFF;
 			width: 100%;
-		}
-
-		#top .btn {
-			margin: auto;
+			height: 48px;
+			background-color: #FFF;
+			padding-top: 16px;
 		}
 
 		#top a {
-			letter-spacing: 0.8px;
 			text-decoration: none;
 		}
 
-		#top p {
+		.header {
+			max-width: 768px;
+			margin: 0 auto;
+		}
+
+		.header p {
 			font-family: "arial";
+			letter-spacing: 0.8px;
+		}
+
+		.title {
+			margin-left: 16px;
+		}
+
+		.btn {
+			margin-top: -28px;
+			width: 100%;
+			height: 32px;
+		}
+
+		.btn a {
+			float: right;
+			margin-right: 16px;
 		}
 
 		/* top-animation */
@@ -181,7 +199,9 @@
 		/* close icon */
 			.close {
 				position: fixed;
+				display: block;
 				height: 24px;
+				width: 24px;
 				opacity: 0.8;
 				z-index: 1;
 			}
@@ -190,9 +210,9 @@
 			}
 			.close:before, .close:after {
 				position: absolute;
-				top: -48px;
-				left: 24px;
-				content: ' ';
+				margin-top: -48px;
+				margin-left: 24px;
+				content: "";
 				height: 24px;
 				width: 2px;
 				background-color: #CCC;
@@ -207,23 +227,9 @@
 /* SmartPhone */
 @media (max-width: 767px){
 	/* Top */
-		.spNone {
-			display: none;
-		}
-
 		#top {
 			padding: 8px 0;
 			border-bottom: #f0f0f0 solid 1px;
-		}
-
-		#top .btn {
-			width: 80%;
-		}
-
-		.btn p{
-			text-align: center;
-			padding: 7px 0;
-			font-size: 20px;
 		}
 
 	/* list */
@@ -243,25 +249,7 @@
 /* Desktop */
 @media (min-width: 768px){
 	/* Top */
-		
-		#top {
-			height: 96px;
-		}
-		
-		#top .btn {
-			width: 336px;
-			margin-top: 32px;
-		}
 
-		#top .btn div {
-			text-align: center;
-			float: left;
-		}
-
-		#top p {
-			margin: 0px 16px;
-			font-size: 24px;
-		}
 
 	/* bg */
 		.yam-bg::before, .sch-bg::before {  
