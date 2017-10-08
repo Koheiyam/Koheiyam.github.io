@@ -32,9 +32,9 @@
 			z-index: 1;
 			position: fixed;
 			width: 100%;
-			height: 48px;
+			height: 36px;
 			background-color: #FFF;
-			padding-top: 16px;
+			padding-top: 12px;
 		}
 
 		#top a {
@@ -252,8 +252,15 @@
 @media (max-width: 767px){
 	/* Top */
 		#top {
-			padding: 8px 0;
 			border-bottom: #f0f0f0 solid 1px;
+		}
+
+		.title {
+			display: none;
+		}
+
+		.btn {
+			margin-top: 0;
 		}
 
 	/* list */
@@ -273,6 +280,9 @@
 /* Desktop */
 @media (min-width: 768px){
 	/* Top */
+		.btn {
+			margin-top: -28px;
+		}
 
 
 	/* bg */
@@ -280,7 +290,7 @@
 			display: block;
 			position: fixed;
 			background-repeat: no-repeat;
-			background-position: center center;
+			background-position: center 70%;
 			background-attachment: fixed;
 			content: "";
 			width: 100%;
