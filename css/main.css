@@ -66,6 +66,30 @@
 			margin-right: 16px;
 		}
 
+		.btn p {
+			padding-left: 8px;
+		}
+
+		/* arrow */
+			.arrow:before, .arrow:after {
+				vertical-align: middle;
+				height: 8px;
+				width: 8px;
+				position: absolute;
+				content: "";
+				height: 5px;
+				width: 1px;
+				background-color: #303030;
+			}
+			.arrow:before {
+				margin-top: 14px;
+				transform: rotate(45deg);
+			}
+			.arrow:after {
+				margin-top: -17px;
+				transform: rotate(-45deg);
+			}
+
 		/* top-animation */
 			#top {
 			    animation-duration: 1500ms;
@@ -265,12 +289,10 @@
 		}
 
 		.yam-bg::before {
-			top: -64px;
-			background-image: url(../img/yam/yam.png);
+			background-image: url(../img/yam/yam-g.png);
 		}
 
 		.sch-bg::before {
-			top: -64px;
 			background-image: url(../img/sch/nyan_with.png);
 		}
 
