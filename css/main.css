@@ -173,6 +173,11 @@
 
 		.list img {
 			width: 240px;
+			border-bottom: solid;
+			border-right: solid;
+			border-width: 1px;
+			border-radius: 2%;
+			border-color: #F0F0F9;
 		}
 
 		.list p {
@@ -223,9 +228,7 @@
 		/* close icon */
 			.close {
 				position: fixed;
-				display: block;
 				height: 24px;
-				width: 24px;
 				opacity: 0.8;
 				z-index: 1;
 			}
