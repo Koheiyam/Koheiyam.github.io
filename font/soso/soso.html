@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv=”content-language” content=”ja”>
+<title>Soso Serif</title>
+<meta name="description" content="Designer / Kohei Yamamoto">
+<link href="../css/main.css" rel="stylesheet">
+<link rel="icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SNS -->
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="ヤマモト・コウヘイ">
+<meta property="og:title" content="Designer | Kohei Yamamoto">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://koheiyam.github.io/yam/">
+<meta property="og:image" content="https://koheiyam.github.io/i-v.png">
+<meta property="og:description" content="#">
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107069590-1"></script>
+<script>
+if (!window.ga) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-107069590-1', 'auto');
+    ga('send', 'pageview');
+}
+ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.location.search);
+</script>
+
+<style type="text/css">
+	/* common */
+		body,html {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+
+		h1,h2,p {
+			font-family: 'Lato', Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+			color: #1F1D18;
+			margin: 0;
+		}	
+
+		.container {
+			display: block;
+			width: 100%;
+			margin: auto;
+		}
+
+		.bg-1 {
+			background-color: #F2E2C2;
+		}
+
+		.bg-2 {
+			background-color: #FFFBF5;
+		}
+
+		#top, #character, #ple-1, #ple-2, #ple-3, #contents {
+			max-width: 1440px;
+			margin: auto;
+		}
+
+		/* header */
+			#top {
+				width: 100%;
+				height: 640px;
+				margin: auto;
+				position: relative;
+				z-index: 0;
+				background-image: 
+					url("header1.svg"),
+					url("header2.svg");
+				background-repeat: no-repeat;
+				background-position: top center;
+				background-size: 100% 100%;
+			}
+
+			.header1 {
+				position: absolute;
+				height: 100%;
+				z-index: 0;
+			}
+
+			.header2 {
+				position: absolute;
+				height: 100%;
+				z-index: 0;
+			}
+
+		/* ple */
+			#ple {
+				width: 100%;
+				z-index: 2;
+			}
+
+			#ple h1, #ple h2 {
+				text-align: center;
+			}
+
+			#ple .container {
+				transition: .8s;
+			}
+
+			#ple-2 img {
+				margin-right: 20%;
+			}
+
+			.text {
+				display: block;
+			}
+
+			#ple-1 .text, #ple-3 .text {
+				margin-right: 24%;
+			}
+
+		/* character set */
+			#character img {
+				display: block;
+				width: 83%;
+				margin: auto;
+				position: center;
+			}
+
+		/* contents */
+			#contents article {
+				display: block;
+				width: 83%;
+				margin: auto;
+			}
+
+			#contents a:link {
+				color: #857C66;
+			}
+
+			#contents a:visited {
+				color: #857C66;
+			}
+
+			#contents a:hover {
+				color: #1F1D18;
+			}
+
+			/* btn */
+
+				.btn {
+				    line-height: 48px;
+				    height: 48px;
+				    text-align: center;
+				    width: 200px;
+				    cursor: pointer;
+				    color: #A39883;
+				    transition: all 0.5s;
+				    position: relative;
+				}
+				.btn::before {
+				    content: '';
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 100%;
+				    height: 100%;
+				    z-index: 1;
+				    background-color: rgba(245,228,196,0.4);
+				    border-radius: 8px;
+				    transition: all 0.3s;
+				}
+				.btn:hover::before {
+				    opacity: 0 ;
+				    transform: scale(0.5,0.5);
+				}
+				.btn::after {
+				    content: '';
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 100%;
+				    height: 100%;
+				    z-index: 1;
+				    opacity: 0;
+				    transition: all 0.3s;
+				    border: 1px solid #A39883;
+				    border-radius: 8px;
+				    transform: scale(1,1);
+				}
+				.btn:hover::after {
+				    opacity: 1;
+				    transform: scale(1,1);
+				}
+
+	/* Desktop */
+	@media (min-width: 768px){
+		h1 {
+			font-size: 60px;
+		}
+
+		h2 {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 20px;
+			margin: 40px 0;
+		}
+
+		.min {
+			margin-top: 8px;
+			font-size: 12px;
+			color: #A39883;
+		}
+
+		/* character set */
+			#character img {
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+
+		/* ple */
+
+			#ple img {
+				height: 480px;
+			}
+
+			#ple-1, #ple-2, #ple-3 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 83%;
+				height: 800px;
+			}
+
+
+		/* contents */
+			#contents article {
+				padding-top: 112px;
+				padding-bottom: 112px;
+				padding-left:16px;
+			}
+	}
+
+
+
+	/* Smartphone */
+	@media (max-width: 767px){
+		h1 {
+			font-size: 32px;
+		}
+
+		h2 {
+			font-size: 18px;
+		}
+
+		p {
+			font-size: 10px;
+		}
+
+		.min {
+			font-size: 6px;
+		}
+
+		/* character set */
+			#character img {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+		/* contents */
+			#contents article {
+				padding-top: 32px;
+				padding-bottom: 32px;
+			}
+	}
+</style>
+
+</head>
+
+<body>
+	<!-- Top -->
+	<div class="container bg-1">
+		<div id="top">
+			
+		</div>
+
+	</div>
+
+	<!-- plesentation -->
+	<div id="ple">
+		<div class="container bg-2">
+			<div id="ple-1">
+				<div class="text">
+					<h1>aaaa</h1>
+					<h2>
+						pppp<br>
+						ppppp<br>
+						ppppppppp<br>
+					</h2>
+				</div>
+				<img src="letter-d.svg">
+			</div>
+		</div>
+		<div class="container bg-2">
+			<div id="ple-2">
+				<img src="letter-r.svg">
+				<div class="text">
+					<h1>aaaa</h1>
+					<h2>
+						pppp<br>
+						ppppp<br>
+						ppppppppp<br>
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container bg-2">
+			<div id="ple-3">
+				<div class="text">
+					<h1>aaaa</h1>
+					<h2>
+						pppp<br>
+						ppppp<br>
+						ppppppppp<br>
+					</h2>
+				</div>
+				<img src="letter-d.svg">
+			</div>
+		</div>
+	</div>
+
+	<div class="container bg-1">
+		<div id="character">
+			<img src="character.svg">
+		</div>
+	</div>
+
+	<div class="container bg-2">
+		<div id="contents">
+			<article>
+				<h2>Soso Serif</h2>
+				<p class="min">ver 1.0.0</p>
+				<p>
+					本文は20ptで書きます<br>
+					何行になるかはみていですが、<br><br>
+					横幅1184ptはたどり着きたいので<br>
+					がんばって文章を書きます。<br><br>
+					なんだかんだ改行をくしすれば、<br>
+					短く簡潔にまとめられそうですね。<br>
+					＿<br>
+					フォントご利用の際には<a href="#">フォントの使用について</a>をご一読ください。
+				</p>
+				<div class="btn">
+					<p><span>Download</span></p>
+				</div>
+				<p class="min">ver 1.0.0</p>
+			</article>
+		</div>
+	</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.pjax.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			  $('#ple .container').css("opacity","0");
+			  $(window).scroll(function (){
+			    $("#ple .container").each(function(){
+			      var imgPos = $(this).offset().top;    
+			      var scroll = $(window).scrollTop();
+			      var windowHeight = $(window).height();
+			      if (scroll > imgPos - windowHeight + windowHeight/3){
+			        $("#ple .container",this).css("opacity","1" );
+			      } else {
+			        $("#ple .container",this).css("opacity","1" );
+			      }
+			    });
+			  });
+			});
+		</script>
+</body>

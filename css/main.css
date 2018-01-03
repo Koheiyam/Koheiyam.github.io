@@ -7,7 +7,7 @@
 
 		h3,h4,h5,a {
 			font-family: "arial";
-			color: #303030
+			color: #302424;
 		}
 
 		h3,h4 {
@@ -137,6 +137,11 @@
 			line-height: 24px;
 		}
 
+		.caption h4{
+			margin-top: 180px;
+			max-width: 64%;
+		}
+
 		/* container-animation */
 			#container {
 			    animation-duration: 1500ms;
@@ -176,7 +181,7 @@
 			border-right: solid;
 			border-width: 1px;
 			border-radius: 2%;
-			border-color: #F0F0F9;
+			border-color: #FFEDCC;
 		}
 
 		.list p {
@@ -310,7 +315,7 @@
 
 	/* list */
 		ul {
-			margin-top: 180px;
+			margin-top: 48px;
 			margin-left: 16%;
 			margin-bottom: 40px;
 		}
