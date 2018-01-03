@@ -62,7 +62,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			background-color: #FFFBF5;
 		}
 
-		#top, #character, #ple-1, #ple-2, #ple-3, #contents {
+		#top, #character, .box, .box-r, #contents {
 			max-width: 1440px;
 			margin: auto;
 		}
@@ -104,21 +104,23 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				text-align: center;
 			}
 
-			#ple-1, #ple-2, #ple-3 {
+			#ple img {
 				transition: 2s;
 			}
 
-			#ple-2 img {
+			.box-r img {
 				margin-right: 20%;
 			}
 
 			.text {
 				display: block;
+				transition: 2s;
 			}
 
-			#ple-1 .text, #ple-3 .text {
+			.box .text {
 				margin-right: 24%;
 			}
+
 
 		/* character set */
 			#character img {
@@ -227,7 +229,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				height: 480px;
 			}
 
-			#ple-1, #ple-2, #ple-3 {
+			.box, .box-r {
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -292,7 +294,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	<!-- plesentation -->
 	<div id="ple">
 		<div class="container bg-2">
-			<div id="ple-1">
+			<div class="box">
 				<div class="text">
 					<h1>aaaa</h1>
 					<h2>
@@ -305,7 +307,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			</div>
 		</div>
 		<div class="container bg-2">
-			<div id="ple-2">
+			<div class="box-r">
 				<img src="letter-r.svg">
 				<div class="text">
 					<h1>aaaa</h1>
@@ -318,7 +320,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			</div>
 		</div>
 		<div class="container bg-2">
-			<div id="ple-3">
+			<div class="box">
 				<div class="text">
 					<h1>aaaa</h1>
 					<h2>
@@ -366,16 +368,16 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		<script type="text/javascript" src="../js/main.js"></script>
 		<script type="text/javascript">
 			$(function(){
-			  $('#ple-1, #ple-2, #ple-3').css("opacity","0");
+			  $('.box img, .box div').css("opacity","0");
 			  $(window).scroll(function (){
-			    $(".container").each(function(){
+			    $(".box").each(function(){
 			      var imgPos = $(this).offset().top;    
 			      var scroll = $(window).scrollTop();
 			      var windowHeight = $(window).height();
 			      if (scroll > imgPos - windowHeight + windowHeight/10){
-			        $("#ple-1, #ple-2, #ple-3",this).css("opacity","1" );
+			        $("img div",this).css("opacity","1" );
 			      } else {
-			        $("#ple-1, #ple-2, #ple-3",this).css("opacity","1" );
+			        $("img, div",this).css("opacity","1" );
 			      }
 			    });
 			  });
