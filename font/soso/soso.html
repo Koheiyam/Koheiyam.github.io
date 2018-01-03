@@ -105,7 +105,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			}
 
 			#ple-1, #ple-2, #ple-3 {
-				transition: .8s;
+				transition: 2s;
 			}
 
 			#ple-2 img {
@@ -366,16 +366,16 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		<script type="text/javascript" src="../js/main.js"></script>
 		<script type="text/javascript">
 			$(function(){
-			  $('ple-1, #ple-2, #ple-3').css("opacity","0");
+			  $('#ple-1, #ple-2, #ple-3').css("opacity","0");
 			  $(window).scroll(function (){
-			    $("ple-1, #ple-2, #ple-3").each(function(){
+			    $(".container").each(function(){
 			      var imgPos = $(this).offset().top;    
 			      var scroll = $(window).scrollTop();
 			      var windowHeight = $(window).height();
-			      if (scroll > imgPos - windowHeight + windowHeight/3){
-			        $("ple-1, #ple-2, #ple-3",this).css("opacity","1" );
+			      if (scroll > imgPos - windowHeight + windowHeight/10){
+			        $("#ple-1, #ple-2, #ple-3",this).css("opacity","1" );
 			      } else {
-			        $("ple-1, #ple-2, #ple-3",this).css("opacity","1" );
+			        $("#ple-1, #ple-2, #ple-3",this).css("opacity","1" );
 			      }
 			    });
 			  });
