@@ -72,7 +72,6 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				width: 100%;
 				margin: auto;
 				position: relative;
-				z-index: 0;
 			}
 
 			#top:before {
@@ -87,11 +86,13 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				right: 0;
 				bottom: 0;
 				left: 0;
+				z-index: 0;
 			}
 
 			#top img {
 				width: 100%;
 				height: 100%;
+				position: center;
 				object-fit: cover;
 			}
 
@@ -99,6 +100,42 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				position: absolute;
 				top: 0;
 			}
+
+			/* header-animation */
+				.header1 {
+					animation-duration: 2000ms;
+					animation-name: fadeSlideInA;
+				}
+
+				@keyframes fadeSlideInA {
+				    0% {
+				    	margin-top: -2%;
+				        opacity: 0.3;
+				    }
+
+				    100% {
+				    	margin-top: 0;
+				        opacity: 1;
+				    }
+				}
+
+				.header2 {
+					animation-duration: 800ms;
+					animation-name: fadeSlideInB;
+					animation-delay: 200ms;
+				}
+
+				@keyframes fadeSlideInB {
+				    0% {
+				    	margin-top: -1%;
+				        opacity: 0.4;
+				    }
+
+				    100% {
+				    	margin-top: 0;
+				        opacity: 1;
+				    }
+				}
 
 		/* ple */
 			#ple {
@@ -125,7 +162,6 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			.box-t .text {
 				margin-right: 24%;
 			}
-
 
 		/* character set */
 			#character img {
@@ -247,8 +283,8 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			}
 
 			.box-r {
-				padding-top: -80px;
-				padding-bottom: -120px;
+				margin-top: -160px;
+				margin-bottom: -160px;
 			}
 
 
@@ -301,7 +337,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	<div class="container bg-1">
 		<div id="top">
 			<div class="imgs">
-				<img src="header1.svg">
+				<img src="header1.svg" class="header1">
 				<img src="header2.svg" class="header2">
 			</div>
 		</div>
