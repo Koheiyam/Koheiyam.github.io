@@ -7,7 +7,7 @@
 <meta name="description" content="Designer / Kohei Yamamoto">
 <link href="../css/main.css" rel="stylesheet">
 <link rel="icon" href="../favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- SNS -->
@@ -43,7 +43,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		}
 
 		h1,h2,p {
-			font-family: 'Lato', Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+			font-family: 'Noto Sans', Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
 			color: #1F1D18;
 			margin: 0;
 		}	
@@ -70,28 +70,34 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		/* header */
 			#top {
 				width: 100%;
-				height: 640px;
 				margin: auto;
 				position: relative;
 				z-index: 0;
-				background-image: 
-					url("header1.svg"),
-					url("header2.svg");
-				background-repeat: no-repeat;
-				background-position: top center;
-				background-size: 100% 100%;
 			}
 
-			.header1 {
+			#top:before {
+				content: "";
+				display: block;
+				padding-top: 56%;
+			}
+
+			.imgs {
 				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+
+			#top img {
+				width: 100%;
 				height: 100%;
-				z-index: 0;
+				object-fit: cover;
 			}
 
 			.header2 {
 				position: absolute;
-				height: 100%;
-				z-index: 0;
+				top: 0;
 			}
 
 		/* ple */
@@ -105,7 +111,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			}
 
 			.box img, .box div {
-				transition: 2s
+				transition: .5s
 			}
 
 			.box-r img {
@@ -223,7 +229,6 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			}
 
 		/* ple */
-
 			#ple img {
 				height: 480px;
 			}
@@ -233,7 +238,17 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				justify-content: center;
 				align-items: center;
 				width: 83%;
-				height: 800px;
+				height: 680px;
+			}
+
+			.box-t {
+				padding-top: 64px;
+				padding-bottom: 80px;
+			}
+
+			.box-r {
+				padding-top: -80px;
+				padding-bottom: -120px;
 			}
 
 
@@ -285,7 +300,10 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	<!-- Top -->
 	<div class="container bg-1">
 		<div id="top">
-			
+			<div class="imgs">
+				<img src="header1.svg">
+				<img src="header2.svg" class="header2">
+			</div>
 		</div>
 
 	</div>
@@ -373,7 +391,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			      var imgPos = $(this).offset().top;    
 			      var scroll = $(window).scrollTop();
 			      var windowHeight = $(window).height();
-			      if (scroll > imgPos - windowHeight + windowHeight/2){
+			      if (scroll > imgPos - windowHeight + windowHeight/1.2){
 			        $("img, div",this).css("opacity","1" );
 			      } else {
 			        $("img, div",this).css("opacity","0" );
