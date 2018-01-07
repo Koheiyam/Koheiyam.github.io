@@ -39,82 +39,8 @@ if (!window.ga) {
 ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.location.search);
 </script>
 
+<link rel="stylesheet" type="text/css" href="main.css">
 <style type="text/css">
-	/* common */
-		body,html {
-			width: 100%;
-			height: 100%;
-			min-width: 1024px;
-			margin: 0;
-		}
-
-		h1,h2,p {
-			font-family: 'Noto Sans', Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
-			color: #333333;
-			margin: 0 8px 0 8px;
-		}
-
-		h1 {
-			font-size: 20pt;
-		}
-
-		h2 {
-			font-size: 13pt;
-			margin-top: 10pt;
-			margin-bottom: 24pt;
-		}
-
-		p {
-			font-size: 13pt;
-			margin-top: 10pt;
-			margin-bottom: 24pt;
-		}
-
-		img {
-			width: 100%;
-		}
-
-		.container {
-			max-width: 1184px;
-			margin: 0 auto 112pt auto;
-		}
-
-	/* top */
-
-	/* lists */
-		#lists {
-			margin: 12% 128px 0 128px;
-
-		}
-
-		.title {
-			display: block;
-			width: 100%;
-			padding-top: 2%;
-		}
-
-		.catch-img {
-			width: 100%;
-			padding: 0;
-			background-color: #999999;
-			overflow: hidden;
-		}
-
-		/* img hover animation */
-			.catch-img img {
-				vertical-align: bottom;
-				-webkit-transform: scale(1);
-				transform: scale(1);
-				-webkit-transition: 200ms ease-in-out;
-				transition: 200ms ease-in-out;
-			}
-
-			.catch-img:hover img {
-				-webkit-transform: scale(1.04);
-				transform: scale(1.04);
-				opacity: 0.8;
-			}
-
 	/* profile */
 		.profile {
 			padding-top: 120px;
@@ -125,93 +51,91 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		.profile p {
 			margin: 0 128px;
 		}
-
-	/* footer */
-		.footer {
-			width: 100%;
-			background-color: #FFCF70;
-		}
-
-		.footer img {
-			width: 120px;
-			margin: 40px 0 40px 128px;
-		}
-
-	/* desktop */
-
 </style>
 
 </head>
 
 <body>
-	<!-- Top -->
-<!--	<div id="top">
-		<g>
-			<img src="img/identity/footer.svg">
-		</g>
-	</div>
--->
-	<!-- lists -->
-	<div id="lists">
-		<div class="container">
-			<div class="catch-img">
-				<img src="img/azit/azit-catch.jpg">
+	<div id="pjax-contailner">
+		<!-- Top -->
+	<!--	<div id="top">
+			<g>
+				<img src="img/identity/footer.svg">
+			</g>
+		</div>
+	-->
+		<!-- lists -->
+		<div id="lists">
+			<div class="container">
+				<a href="article/azit.html" class="pjaxLink">
+					<div class="catch-img">
+						<img src="img/azit/azit-catch.jpg">
+					</div>
+					<div class="title">
+						<h1>Azit</h1>
+						<h2>CI, VI, Art Direction, Logo, Web, 2017</h2>
+					</div>
+				</a>
 			</div>
-			<div class="title">
-				<h1>Azit</h1>
-				<h2>CI, VI, Art Direction, Logo, Web, 2017</h2>
+			<div class="container">
+				<a href="article/porme.html" class="pjaxLink">
+					<div class="catch-img">
+						<img src="img/porme/porme-catch.png">
+					</div>
+					<div class="title">
+						<h1>PORME</h1>
+						<h2>VI, Art Direction, Logo, 2017</h2>
+					</div>
+				</a>
+			</div>
+			<div class="container">
+				<a href="article/soso.html" class="pjaxLink">
+					<div class="catch-img">
+						<img src="img/soso/soso-catch.jpg">
+					</div>
+					<div class="title">
+						<h1>Soso Serif</h1>
+						<h2>Font, Typography, Art Direction, Coming Soon(2018)</h2>
+					</div>
+				</a>
+			</div>
+			<div class="container" class="pjaxLink">
+				<a href="article/identity.html">
+					<div class="catch-img">
+						<img src="img/identity/identity-catch.png">
+					</div>
+					<div class="title">
+						<h1>Identity</h1>
+						<h2>Self Branding, Art Direction, Logo, Web, 2016</h2>
+					</div>
+				</a>
 			</div>
 		</div>
-		<div class="container">
-			<div class="catch-img">
-				<img src="img/porme/porme-catch.png">
-			</div>
-			<div class="title">
-				<h1>PORME</h1>
-				<h2>VI, Art Direction, Logo, 2017</h2>
-			</div>
-		</div>
-		<div class="container">
-			<div class="catch-img">
-				<img src="img/soso/soso-catch.jpg">
-			</div>
-			<div class="title">
-				<h1>Soso Serif</h1>
-				<h2>Font, Typography, Art Direction, Coming Soon(2018)</h2>
-			</div>
-		</div>
-		<div class="container">
-			<div class="catch-img">
-				<img src="img/identity/identity-catch.png">
-			</div>
-			<div class="title">
-				<h1>Identity</h1>
-				<h2>Self Branding, Art Direction, Logo, Web, 2016</h2>
-			</div>
-		</div>
-	</div>
 
-	<!-- profile -->
-	<div class="profile">
-		<div class="container">
-			<div class="title">
-				<p>
-					<b>Profile</b><br><br>
-					コーヘイ・ヤマモト<br><br>
-					1996年生。数学科を経て、現在デザイン専門学校に在学。漠然としたイメージから確かな意味付けとデザインを研究し、時代の変化を捉えつつ、真摯にパートナーと向き合って制作する。趣味はオセロ。同人音楽ではschöneco名義で活動中。<br><br><br><br>
-				</p>
-				<p>
-					<b>ご依頼について</b><br>
-					ロゴ、名刺のデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br><br>
-					koh.yam.cntct[=ω=]gmail.com
-				</p>
+		<!-- profile -->
+		<div class="profile">
+			<div class="container">
+				<div class="title">
+					<p>
+						<b><font color="#FFBB33">Profile</font></b><br><br>
+						コーヘイ・ヤマモト<br><br>
+						1996年生。数学科を経て、現在デザイン専門学校に在学。<br>
+						漠然としたイメージから確かな意味付けとデザインを研究し、時代の変化を捉えつつ、真摯にパートナーと向き合って制作する。趣味はオセロ。同人音楽ではschöneco名義で活動中。<br><br><br><br><br>
+					</p>
+					<p>
+						<font color="#FFBB33">ご依頼について</font><br><br>
+						ロゴ、名刺のデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br><br>
+						koh.yam.cntct[=ω=]gmail.com
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<!-- footer -->
 	<div class="footer">
-		<img src="img/identity/footer.svg">
+		<a href="index.html">
+			<img src="img/identity/footer.svg">
+		</a>
 	</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -225,7 +149,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			      var imgPos = $(this).offset().top;    
 			      var scroll = $(window).scrollTop();
 			      var windowHeight = $(window).height();
-			      if (scroll > imgPos - windowHeight + windowHeight/2.4){
+			      if (scroll > imgPos - windowHeight + windowHeight/1.8){
 			        $('.profile').css({"background-color":"rgba(255,238,204,1)","transition":"background-color 0.5s"});
 			      } else {
 			        $('.profile').css("background-color","rgba(255,238,204,0.2)");
