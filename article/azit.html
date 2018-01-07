@@ -1,2 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	壁|=ω=)ｼﾞｰ
+	ﾌﾝ(=ω=三=ω=)ﾌﾝ
+	壁|彡ｼｭﾊﾟｯ
+-->
 
-azit.html
+<head>
+<meta charset="UTF-8">
+<meta http-equiv=”content-language” content=”ja”>
+<title>Kohei Ymamoto</title>
+<meta name="description" content="Designer / Kohei Yamamoto">
+<link href="../css/main.css" rel="stylesheet">
+<link rel="icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SNS -->
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="ヤマモト・コウヘイ">
+<meta property="og:title" content="Designer | Kohei Yamamoto">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://koheiyam.github.io/">
+<meta property="og:image" content="https://koheiyam.github.io/i-v.png">
+<meta property="og:description" content="ダーツとかビリヤードとかオセロとか写真とかツイッターとかが好きです">
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107069590-1"></script>
+<script>
+if (!window.ga) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-107069590-1', 'auto');
+    ga('send', 'pageview');
+}
+ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.location.search);
+</script>
+
+<link rel="stylesheet" type="text/css" href="../main.css">
+<style type="text/css">
+	/* profile */
+		.profile {
+			padding-top: 120px;
+			padding-bottom: 8px;
+			background-color: #FFEECC;
+		}
+
+		.profile p {
+			margin: 0 128px;
+		}
+</style>
+
+</head>
+
+<body>
+	<div class="pjax-container">
+		<div id="lists">
+			<div class="container">
+				<img src="../img/azit/azit-catch.jpg">
+				<div class="title">
+					<h1>Azit</h1>
+					<h2>CI, VI, Art Direction, Logo, Web, 2017</h2>
+					<p>
+						 あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<a href="index.html" class="pjaxLink">
+				<img src="../img/identity/footer.svg">
+			</a>
+		</div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.pjax.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			  $('.profile').css("background-color","rgba(255,238,204,0.2)");
+			  $(window).scroll(function (){
+			    $(".profile").each(function(){
+			      var imgPos = $(this).offset().top;    
+			      var scroll = $(window).scrollTop();
+			      var windowHeight = $(window).height();
+			      if (scroll > imgPos - windowHeight + windowHeight/1.8){
+			        $('.profile').css({"background-color":"rgba(255,238,204,1)","transition":"background-color 0.5s"});
+			      } else {
+			        $('.profile').css("background-color","rgba(255,238,204,0.2)");
+			      }
+			    });
+			  });
+			});
+		</script>
+</body>

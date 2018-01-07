@@ -71,7 +71,7 @@
 			transition: 200ms ease-in-out;
 		}
 
-		.container:hover img {
+		.container:hover .catch-img img {
 			-webkit-transform: scale(1.04);
 			transform: scale(1.04);
 			opacity: 0.8;
