@@ -393,7 +393,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			      var imgPos = $(this).offset().top;    
 			      var scroll = $(window).scrollTop();
 			      var windowHeight = $(window).height();
-			      if (scroll > imgPos - windowHeight + windowHeight/1.2){
+			      if (scroll > imgPos - windowHeight + windowHeight/1.6){
 			        $("img, div",this).css({"opacity":"1","transition":"0.5s"});
 			      } else {
 			        $("img, div",this).css("opacity","0" );

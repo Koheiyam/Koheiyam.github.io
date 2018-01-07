@@ -4,16 +4,20 @@
 	ﾌﾝ(=ω=三=ω=)ﾌﾝ
 	壁|彡ｼｭﾊﾟｯ
 -->
+
 <head>
 <meta charset="UTF-8">
-<title>Kohei Yamamoto</title>
-<link rel="icon" href="favicon.ico">
+<meta http-equiv=”content-language” content=”ja”>
+<title>Kohei Ymamoto</title>
+<meta name="description" content="Designer / Kohei Yamamoto">
+<link href="../css/main.css" rel="stylesheet">
+<link rel="icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="4;URL=yam/index.html">
 
 <!-- SNS -->
 <meta property="og:locale" content="ja_JP">
-<meta property="og:site_name" content="ヤマモト・コウヘイのポートフォリオサイト">
+<meta property="og:site_name" content="ヤマモト・コウヘイ">
 <meta property="og:title" content="Designer | Kohei Yamamoto">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://koheiyam.github.io/">
@@ -23,330 +27,211 @@
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107069590-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
+if (!window.ga) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  gtag('config', 'UA-107069590-1');
+    ga('create', 'UA-107069590-1', 'auto');
+    ga('send', 'pageview');
+}
+ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.location.search);
 </script>
 
 <style type="text/css">
-	/* animation */
-		body {
-			-webkit-backface-visibility: hidden;
-		}
-		.animated {
-			-webkit-animation-duration: 1.3s;
-			   -moz-animation-duration: 1.3s;
-			     -o-animation-duration: 1.3s;
-			        animation-duration: 1.3s;
-			-webkit-animation-fill-mode: both;
-			   -moz-animation-fill-mode: both;
-			     -o-animation-fill-mode: both;
-			        animation-fill-mode: both;
-		}
-
-		.animated.hinge {
-			-webkit-animation-duration: 2s;
-			   -moz-animation-duration: 2s;
-			     -o-animation-duration: 2s;
-			        animation-duration: 2s;
-		}
-
-		/* title-animation */
-			@-webkit-keyframes flipInX {
-			    0% {
-			        -webkit-transform: perspective(400px) rotateX(90deg);
-			        opacity: 0;
-			    }
-			    
-			    40% {
-			        -webkit-transform: perspective(400px) rotateX(-10deg);
-			    }
-			    
-			    70% {
-			        -webkit-transform: perspective(400px) rotateX(10deg);
-			    }
-			    
-			    100% {
-			        -webkit-transform: perspective(400px) rotateX(0deg);
-			        opacity: 1;
-			    }
-			}
-			@-moz-keyframes flipInX {
-			    0% {
-			        -moz-transform: perspective(400px) rotateX(90deg);
-			        opacity: 0;
-			    }
-			    
-			    40% {
-			        -moz-transform: perspective(400px) rotateX(-10deg);
-			    }
-			    
-			    70% {
-			        -moz-transform: perspective(400px) rotateX(10deg);
-			    }
-			    
-			    100% {
-			        -moz-transform: perspective(400px) rotateX(0deg);
-			        opacity: 1;
-			    }
-			}
-			@-o-keyframes flipInX {
-			    0% {
-			        -o-transform: perspective(400px) rotateX(90deg);
-			        opacity: 0;
-			    }
-			    
-			    40% {
-			        -o-transform: perspective(400px) rotateX(-10deg);
-			    }
-			    
-			    70% {
-			        -o-transform: perspective(400px) rotateX(10deg);
-			    }
-			    
-			    100% {
-			        -o-transform: perspective(400px) rotateX(0deg);
-			        opacity: 1;
-			    }
-			}
-			@keyframes flipInX {
-			    0% {
-			        transform: perspective(400px) rotateX(90deg);
-			        opacity: 0;
-			    }
-			    
-			    40% {
-			        transform: perspective(400px) rotateX(-10deg);
-			    }
-			    
-			    70% {
-			        transform: perspective(400px) rotateX(10deg);
-			    }
-			    
-			    100% {
-			        transform: perspective(400px) rotateX(0deg);
-			        opacity: 1;
-			    }
-			}
-
-			.flipInX {
-				-webkit-backface-visibility: visible !important;
-				-webkit-animation-name: flipInX;
-				-moz-backface-visibility: visible !important;
-				-moz-animation-name: flipInX;
-				-o-backface-visibility: visible !important;
-				-o-animation-name: flipInX;
-				backface-visibility: visible !important;
-				animation-name: flipInX;
-			}
-
-			@-webkit-keyframes fadeInLeft {
-				0% {
-					opacity: 0;
-					-webkit-transform: translateX(-20px);
-				}
-				
-				100% {
-					opacity: 1;
-					-webkit-transform: translateX(0);
-				}
-			}
-
-			@-moz-keyframes fadeInLeft {
-				0% {
-					opacity: 0;
-					-moz-transform: translateX(-20px);
-				}
-				
-				100% {
-					opacity: 1;
-					-moz-transform: translateX(0);
-				}
-			}
-
-			@-o-keyframes fadeInLeft {
-				0% {
-					opacity: 0;
-					-o-transform: translateX(-20px);
-				}
-				
-				100% {
-					opacity: 1;
-					-o-transform: translateX(0);
-				}
-			}
-
-			@keyframes fadeInLeft {
-				0% {
-					opacity: 0;
-					transform: translateX(-20px);
-				}
-				
-				100% {
-					opacity: 1;
-					transform: translateX(0);
-				}
-			}
-
-			.fadeInLeft {
-				-webkit-animation-name: fadeInLeft;
-				-moz-animation-name: fadeInLeft;
-				-o-animation-name: fadeInLeft;
-				animation-name: fadeInLeft;
-			}
-
-			.btn {
-				animation-name: fadeOut;
-				animation-duration: 1500ms;
-				animation-delay: 3200ms;
-			}
-
-			@keyframes fadeOut {
-				0% {
-					opacity: 1;
-				}
-
-				50% {
-					opacity: 0;
-				}
-
-				100% {
-					opacity: 0;
-				}
-			}
-
 	/* common */
-		#top {
-			position: fixed;
+		body,html {
 			width: 100%;
 			height: 100%;
+			min-width: 1024px;
+			margin: 0;
 		}
 
-		.btn, .intro {
-			margin: auto;
+		h1,h2,p {
+			font-family: 'Noto Sans', Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+			color: #333333;
+			margin: 0 8px 0 8px;
+		}
+
+		h1 {
+			font-size: 20pt;
+		}
+
+		h2 {
+			font-size: 13pt;
+			margin-top: 10pt;
+			margin-bottom: 24pt;
 		}
 
 		p {
-			font-family: 'arial';
-			letter-spacing: 2.8px;
-			color: #303030;
+			font-size: 13pt;
+			margin-top: 10pt;
+			margin-bottom: 24pt;
+		}
+
+		img {
 			width: 100%;
-			position: relative;
-			display: inline-block;
-			text-align: center;
 		}
 
-	/* SmartPhone */
-	@media (max-width: 767px){
-		.spNone {
-			display: none;
+		.container {
+			max-width: 1184px;
+			margin: 0 auto 112pt auto;
 		}
 
-		.btn {
-			padding-top: 24%;
+	/* top */
+
+	/* lists */
+		#lists {
+			margin: 12% 128px 0 128px;
+
 		}
 
-		#top .btn {
-			width: 300px;
+		.title {
+			display: block;
+			width: 100%;
+			padding-top: 2%;
 		}
 
-		p{
-			font-size: 32px;
-			margin-bottom: -16px;
-		}
-	}
-	/* DeskTop */
-	@media (min-width: 768px){
-		.btn {
-			padding-top: 24%;
-			width: 564px;
+		.catch-img {
+			width: 100%;
+			padding: 0;
+			background-color: #999999;
+			overflow: hidden;
 		}
 
-		.btn div {
-			float: left;
-		}
-
-		p {
-			margin: 0px 10px;
-			font-size: 48px;
-		}
-		/* underline-animation */
-			p:not(.spNone):before {
-				position: absolute;
-				top: 1.5em;
-				content: "";
-				display: inline-block;
-				width: 0;
-				height: 3px;
-				background: #303030;
-				transition: 0.2s;
+		/* img hover animation */
+			.catch-img img {
+				vertical-align: bottom;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transition: 200ms ease-in-out;
+				transition: 200ms ease-in-out;
 			}
 
-			.title-1:before {
-				left: 2.35em;
+			.catch-img:hover img {
+				-webkit-transform: scale(1.04);
+				transform: scale(1.04);
+				opacity: 0.8;
 			}
 
-			.title-2:before {
-				left: 2em;
-			}
+	/* profile */
+		.profile {
+			padding-top: 120px;
+			padding-bottom: 8px;
+			background-color: #FFEECC;
+		}
 
-			p:not(.spNone):hover:before {
-			  width: 20%;
-			}
-	}
+		.profile p {
+			margin: 0 128px;
+		}
+
+	/* footer */
+		.footer {
+			width: 100%;
+			background-color: #FFCF70;
+		}
+
+		.footer img {
+			width: 120px;
+			margin: 40px 0 40px 128px;
+		}
+
+	/* desktop */
+
 </style>
+
 </head>
 
 <body>
 	<!-- Top -->
-		<section id="top">
-			<div class="btn">
-				<div><p class="title-1">yamamoto</p></div>
-				<div><p class="spNone">|</p></div>
-				<div><p class="title-2">schöneco</p></div>
+<!--	<div id="top">
+		<g>
+			<img src="img/identity/footer.svg">
+		</g>
+	</div>
+-->
+	<!-- lists -->
+	<div id="lists">
+		<div class="container">
+			<div class="catch-img">
+				<img src="img/azit/azit-catch.jpg">
 			</div>
-		</section>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.textillate.min.js"></script>
-	<script type="text/javascript" src="js/jquery.lettering.js"></script>
-	<script type="text/javascript">
-		$(function () {
-			// start
-	    	$('.title-1').textillate({
-	    		initialDelay: 300,
-	    		autoStart: true,
-	    		in: {
-	    			effect:'fadeInLeft',
-	    			delayScale: 3,
-	    			delay: 20,
-	    			sync: false,
-	    			shuffle: false
-	    		}
-	    	});
+			<div class="title">
+				<h1>Azit</h1>
+				<h2>CI, VI, Art Direction, Logo, Web, 2017</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="catch-img">
+				<img src="img/porme/porme-catch.png">
+			</div>
+			<div class="title">
+				<h1>PORME</h1>
+				<h2>VI, Art Direction, Logo, 2017</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="catch-img">
+				<img src="img/soso/soso-catch.jpg">
+			</div>
+			<div class="title">
+				<h1>Soso Serif</h1>
+				<h2>Font, Typography, Art Direction, Coming Soon(2018)</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="catch-img">
+				<img src="img/identity/identity-catch.png">
+			</div>
+			<div class="title">
+				<h1>Identity</h1>
+				<h2>Self Branding, Art Direction, Logo, Web, 2016</h2>
+			</div>
+		</div>
+	</div>
 
-	    	$('.spNone').textillate({
-	    		initialDelay: 620,
-	    		autoStart: true,
-	    		in: {
-	    			effect:'flipInX',
-	    			sync: false,
-	    			shuffle: false
-	    		}
-	    	});
+	<!-- profile -->
+	<div class="profile">
+		<div class="container">
+			<div class="title">
+				<p>
+					<b>Profile</b><br><br>
+					コーヘイ・ヤマモト<br><br>
+					1996年生。数学科を経て、現在デザイン専門学校に在学。漠然としたイメージから確かな意味付けとデザインを研究し、時代の変化を捉えつつ、真摯にパートナーと向き合って制作する。趣味はオセロ。同人音楽ではschöneco名義で活動中。<br><br><br><br>
+				</p>
+				<p>
+					<b>ご依頼について</b><br>
+					ロゴ、名刺のデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br><br>
+					koh.yam.cntct[=ω=]gmail.com
+				</p>
+			</div>
+		</div>
+	</div>
 
-	    	$('.title-2').textillate({
-	    		initialDelay: 420,
-	    		autoStart: true,
-	    		in: {
-	    			effect:'fadeInLeft',
-	    			delayScale: 3,
-	    			delay: 20,
-	    			sync: false,
-	    			shuffle: false
-	    		}
-	    	});
-		});
-	</script>
+	<!-- footer -->
+	<div class="footer">
+		<img src="img/identity/footer.svg">
+	</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.pjax.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			  $('.profile').css("background-color","rgba(255,238,204,0.2)");
+			  $(window).scroll(function (){
+			    $(".profile").each(function(){
+			      var imgPos = $(this).offset().top;    
+			      var scroll = $(window).scrollTop();
+			      var windowHeight = $(window).height();
+			      if (scroll > imgPos - windowHeight + windowHeight/2.4){
+			        $('.profile').css({"background-color":"rgba(255,238,204,1)","transition":"background-color 0.5s"});
+			      } else {
+			        $('.profile').css("background-color","rgba(255,238,204,0.2)");
+			      }
+			    });
+			  });
+			});
+		</script>
 </body>
