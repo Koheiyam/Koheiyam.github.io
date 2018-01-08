@@ -1,2 +1,91 @@
+<!DOCTYPE HTML>
 
-azit.html
+<head>
+<meta charset="UTF-8">
+<meta http-equiv=”content-language” content=”ja”>
+<title>Soso Serif | Kohei Ymamoto</title>
+<meta name="description" content="Designer / Kohei Yamamoto">
+<link rel="icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SNS -->
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="ヤマモト・コウヘイ">
+<meta property="og:title" content="Designer | Kohei Yamamoto">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://syoneco.cat/">
+<meta property="og:image" content="http://syoneco.cat/img/porme/porme-catch.png">
+<meta property="og:description" content="Soso Serif | Font Designed by Kohei Ymamoto">
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107069590-1"></script>
+<script>
+if (!window.ga) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-107069590-1', 'auto');
+    ga('send', 'pageview');
+}
+ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.location.search);
+</script>
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body>
+	<div id="lists">
+		<div class="container">
+			<img src="../img/soso/soso-catch.jpg">
+			<div class="title">
+				<h1>Soso Serif</h1>
+				<h2>Font, Typography, Art Direction, Coming Soon(2018)</h2>
+				<br><br>
+				<p>
+					Soso Serifは、ポスターや見出し用に設計されたディスプレイ書体です。<br>
+					清らかで美しい女性のすがたを意味する「楚々」をキーワードに、可読性を重視することでよりゆったりとした「くびれ」やスラッとした「立ち姿」をした印象を心がけました。
+				</p>
+				<br><br><br><br><br>
+				<img src="../img/soso/soso-letters.png">
+				<br><br><br><br><br>
+				<img src="../img/soso/triumph-card.jpg">
+				<br><br><br><br><br>
+				<p>
+					現在ボールド体を開発中。1月下旬公開予定です。<br>
+					また本文用書体としても利用できるようレギュラー体、イタリック体の開発を予定しています。
+				</p>
+				<br><br><br>
+				<h2>
+					Font Design : Kohei Yamamoto
+				</h2>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<a href="../index.html">
+			<img src="../img/identity/footer.svg">
+		</a>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			  $('.profile').css("background-color","rgba(255,238,204,0.2)");
+			  $(window).scroll(function (){
+			    $(".profile").each(function(){
+			      var imgPos = $(this).offset().top;    
+			      var scroll = $(window).scrollTop();
+			      var windowHeight = $(window).height();
+			      if (scroll > imgPos - windowHeight + windowHeight/1.8){
+			        $('.profile').css({"background-color":"rgba(255,238,204,1)","transition":"background-color 0.5s"});
+			      } else {
+			        $('.profile').css("background-color","rgba(255,238,204,0.2)");
+			      }
+			    });
+			  });
+			});
+		</script>
+</body>
