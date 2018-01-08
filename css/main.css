@@ -56,7 +56,25 @@
 /* lists */
 	#lists {
 		margin: 12% 128px 0 128px;
+		animation-duration: 1800ms;
+		animation-name: fadeSlideIn;
+	}
 
+	@keyframes fadeSlideIn {
+		0% {
+			margin-top: 14%;
+			opacity: 0;
+		}
+
+		60% {
+			margin-top: 14%;
+			opacity: 0;
+		}
+
+		100% {
+			margin-top: 12%;
+			opacity: 1;
+		}
 	}
 
 	.title {
