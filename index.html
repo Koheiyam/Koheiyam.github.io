@@ -44,18 +44,28 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	a {
 		text-decoration: none;
 	}
-	/* profile */
-		.profile {
-			padding-top: 120px;
-			padding-bottom: 8px;
-			background-color: #FFEECC;
-		}
 
-		.profile .container {
-			margin: 0 128px 108px;
-		}
+/* profile */
+	.profile {
+		padding-top: 120px;
+		padding-bottom: 8px;
+		background-color: #FFEECC;
+	}
+
+@media (min-width: 783px){
+	.pro-margin {
+		display: block;
+		margin: 0 128px 112pt 128px;
+	}
+}
+
+@media (max-width: 784px){
+	.profile p, .profile h3 {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
 </style>
-
 </head>
 
 <body>
@@ -116,21 +126,22 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 
 	<!-- profile -->
 	<div class="profile">
-		<div class="container">
-			<div class="title">
-				<h3>Profile</h3>
-				<p>
-					コーヘイ・ヤマモト<br><br>
-					1996年生。数学科を経て、現在デザイン専門学校に在学。<br>
-					漠然としたイメージから確かな意味付けとデザインを研究し、時代の変化を捉えつつ、真摯にパートナーと向き合って制作する。<br>
-					趣味はオセロとビリヤード。同人音楽ではschöneco名義で活動中。
-				</p>
-				<br><br><br>
-				<h3>Contact</h3>
-				<p>
-					ロゴ、名刺のデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br>
-					koh.yam.cntct[=ω=]gmail.com
-				</p>
+		<div class="pro-margin">
+			<div class="container">
+				<div class="title">
+					<h3>Profile</h3>
+					<p>
+						コーヘイ・ヤマモト<br><br>
+						1996年生。数学科を経て、現在デザイン専門学校に在学。<br>
+						漠然としたイメージから確かな意味付けとデザインを研究し、時代の変化を捉えつつ、真摯にパートナーと向き合って制作する。<br>
+						趣味はオセロとビリヤード。同人音楽ではschöneco名義で活動中。
+					</p>
+					<h3>Contact</h3>
+					<p>
+						ロゴ、名刺のデザイン制作についての仕事を承っております。詳しくは下記メールアドレスよりお問い合わせください。<br>
+						koh.yam.cntct[=ω=]gmail.com
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
