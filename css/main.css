@@ -47,6 +47,25 @@
 	}
 
 /* top */
+	#top {
+		margin: 15% 0 -8%;
+		animation-duration: 1400ms;
+		animation-name: fadeIn;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+
+		45% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
 
 /* lists */
 	#lists {
