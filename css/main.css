@@ -53,17 +53,17 @@
 
 	@keyframes fadeSlideIn {
 		0% {
-			margin-top: 14%;
+			margin-top: 128px;
 			opacity: 0;
 		}
 
 		60% {
-			margin-top: 14%;
+			margin-top: 128px;
 			opacity: 0;
 		}
 
 		100% {
-			margin-top: 12%;
+			margin-top: 96px;
 			opacity: 1;
 		}
 	}
@@ -142,7 +142,7 @@
 
 	/* lists */
 		#lists {
-			margin: 12% 128px 0 128px;
+			margin: 96px 128px 0;
 		}
 
 	/* footer */
@@ -161,7 +161,7 @@
 
 	/* lists */
 		#lists {
-			margin: 12% 16px 0;
+			margin: 96px 16px 0;
 		}
 
 	/* footer */

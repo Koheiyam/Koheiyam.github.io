@@ -48,7 +48,6 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 /* top */
 	#top {
 		margin-top: 15%;
-		margin-bottom: -8%;
 		animation-duration: 1400ms;
 		animation-name: fadeIn;
 	}
@@ -75,6 +74,17 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	}
 
 @media (min-width: 783px){
+	.top-container {
+		padding: 0;
+		max-width: 784px;
+		margin: 0 auto;
+	}
+
+	.top-margin {
+		display: block;
+		margin: 0 128px 0 128px;
+	}
+
 	.pro-margin {
 		display: block;
 		margin: 0 128px 112pt 128px;
@@ -82,7 +92,11 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 }
 
 @media (max-width: 784px){
-	.profile p, .profile h3, #top {
+	.top-container {
+		padding: 0;
+	}
+
+	.profile p, .profile h3, .top-container {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -93,10 +107,11 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 <body>
 	<!-- Top -->
 	<div id="top">
-		<div class="pro-margin">
-			<div class="container">
-				<h1>Works</h1>
-			</div>
+				<div class="top-margin">
+					<dir class="top-container">
+						<h1>Works</h1>
+					</dir>
+				</div>
 		</div>
 	</div>
 
