@@ -45,7 +45,10 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		text-decoration: none;
 	}
 
-	.top-container {
+/* top */
+	#top {
+		margin-top: 15%;
+		margin-bottom: -8%;
 		animation-duration: 1400ms;
 		animation-name: fadeIn;
 	}
@@ -72,11 +75,6 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	}
 
 @media (min-width: 783px){
-	.top-container {
-		max-width: 784px;
-		margin: 12% auto 0 auto;
-	}
-
 	.pro-margin {
 		display: block;
 		margin: 0 128px 112pt 128px;
@@ -84,11 +82,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 }
 
 @media (max-width: 784px){
-	.top-container {
-		margin: 12% auto 36pt auto;
-	}
-
-	.profile p, .profile h3, .top-container h1 {
+	.profile p, .profile h3, #top {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -98,9 +92,9 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 
 <body>
 	<!-- Top -->
-	<div class="top-container">
-		<div class="top-margin">	
-			<div class="title">
+	<div id="top">
+		<div class="pro-margin">
+			<div class="container">
 				<h1>Works</h1>
 			</div>
 		</div>
