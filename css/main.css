@@ -7,7 +7,6 @@
 
 	h1,h2,h3,p {
 		font-family: 'Noto Sans', Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
-		margin: 0 8px 0 8px;
 		max-width: 750px;
 	}
 
@@ -44,27 +43,6 @@
 
 	img {
 		width: 100%;
-	}
-
-/* top */
-	#top {
-		margin: 15% 0 -8%;
-		animation-duration: 1400ms;
-		animation-name: fadeIn;
-	}
-
-	@keyframes fadeIn {
-		0% {
-			opacity: 0;
-		}
-
-		45% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
 	}
 
 /* lists */
@@ -152,6 +130,11 @@
 
 /* desktop */
 @media (min-width: 783px){
+	h1, h2, h3, p {
+		margin-right: 4px;
+		margin-left: 4px;
+	}
+
 	.container {
 		max-width: 784px;
 		margin: 0 auto 112pt auto;

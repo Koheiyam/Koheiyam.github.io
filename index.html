@@ -45,6 +45,28 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		text-decoration: none;
 	}
 
+/* top */
+	#top {
+		margin-top: 15%;
+		margin-bottom: -8%;
+		animation-duration: 1400ms;
+		animation-name: fadeIn;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+
+		45% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
 /* profile */
 	.profile {
 		padding-top: 120px;
@@ -60,7 +82,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 }
 
 @media (max-width: 784px){
-	.profile p, .profile h3 {
+	.profile p, .profile h3, #top {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -71,8 +93,10 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 <body>
 	<!-- Top -->
 	<div id="top">
-		<div class="container">
-			<h1>Works</h1>
+		<div class="pro-margin">
+			<div class="container">
+				<h1>Works</h1>
+			</div>
 		</div>
 	</div>
 
