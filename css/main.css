@@ -139,7 +139,7 @@
 		display: block;
 		margin: auto;
 		max-width: 1296px;
-		z-index: 2;
+		z-index: -1;
 		animation-duration: 1800ms;
 		animation-name: fadeIn;
 	}
