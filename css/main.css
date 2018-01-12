@@ -139,7 +139,7 @@
 		display: block;
 		margin: auto;
 		max-width: 1296px;
-		z-index: -1;
+		z-index: 2;
 		animation-duration: 1800ms;
 		animation-name: fadeIn;
 	}
@@ -162,7 +162,6 @@
 		display: block;
 		position: fixed;
 		width: 100%;
-		height: 100%;
 	}
 
 	.close-button {
