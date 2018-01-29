@@ -12,11 +12,86 @@
 		header {
 			position: fixed;
 			width: 100%;
+			animation-duration: 4000ms;
+			animation-name: fadeSlideD;
 		}
 
-		.event img {
-			margin-top: -480px;
+		.navi {
+			margin-top: -260px;
 		}
+
+			@keyframes fadeSlideD {
+				0% {
+					opacity: 0;
+					margin-top: -100px;
+				}
+
+				85% {
+					opacity: 0;
+					margin-top: -100px;
+				}
+
+				100% {
+					opacity: 1;
+					margin-top: 0px;
+				}
+			}
+		.top img {
+			animation-duration: 1200ms;
+			animation-name: fadeIn;
+		}
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+
+		.letter {
+			margin-top: -980px;
+			animation-duration: 2400ms;
+			animation-name: slideL;
+		}
+			@keyframes slideL {
+				0% {
+					opacity: 0;
+					margin-left: -20px;
+				}
+
+				50% {
+					opacity: 0;
+					margin-left: -20px;
+				}
+
+				100% {
+					margin-left: 0;
+				}
+			}
+
+		.event img {
+			margin-top: -120px;
+			animation-duration: 4000ms;
+			animation-name: fadeSlideU;
+		}
+			@keyframes fadeSlideU {
+				0% {
+					opacity: 0;
+					margin-top: -20px;
+				}
+
+				85% {
+					opacity: 0;
+					margin-top: -20px;
+				}
+
+				100% {
+					opacity: 1;
+					margin-top: -120px;
+				}
+			}
 
 		.con-1 {
 			margin-top: -4200px;
@@ -42,18 +117,27 @@
 		}
 
 		footer {
-			margin-top: 500px;
+			margin-top: 310px;
 		}
 
+		.insta {
+			margin-top: -400px;
+		}
 
 	</style>
 </head>
 <body>
 	<header>
 		<img src="img/poca-top.svg">
+		<img class="navi" src="img/poca-navi.svg">
 	</header>
 	<div class="top">
-		<img src="img/top.jpg">
+		<div class="top-img">
+			<img src="img/top.jpg">
+		</div>
+		<div class="letter">
+			<img src="img/poca-letter.svg">
+		</div>
 	</div>
 	<div class="event">
 		<img src="img/poca-event.svg">
@@ -78,5 +162,8 @@
 	</div>
 	<footer>
 		<img src="img/poca-footer.svg">
+		<a href="https://www.instagram.com/pocarisweat_jp/">
+			<img class="insta" src="img/poca-insta.svg">
+		</a>
 	</footer>
 </body>
