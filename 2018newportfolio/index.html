@@ -1,0 +1,425 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+<style type="text/css">
+	html, body {
+		margin: auto;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	h1,h2,h3,p {
+		font-family: 'Noto Sans', sans-serif;
+		color: #212121;
+	}
+
+	h1 {
+		font-weight: bold;
+		font-size: 16px;
+		margin-top: 12px;
+	}
+
+	h2 {
+		font-size: 14.4px;
+		margin-top: 6px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+/* first animation */
+	.first-animation {
+		position: fixed;
+		z-index: 3;
+		animation-name: slideOut;
+		animation-duration: 2400ms;
+		height: 100%;
+		right: 0;
+	}
+		@keyframes slideOut {
+		0% {
+				width: 100%;
+			}
+
+			72% {
+				width: 100%;
+			}
+
+			100% {
+				width: 0;
+			}
+		}
+
+	.first-animation div {
+		position: absolute;
+		width: 100%;
+	}
+
+	.black {
+		background-color: #333;
+		z-index: 5;
+		top: 42%;
+		height: 12px;
+		animation-name: bSlideIn;
+		animation-duration: 2400ms;
+	}
+		@keyframes bSlideIn {
+			0% {
+				width: 0%;
+			}
+
+			24% {
+				width: 0%;
+			}
+
+			48% {
+				width: 100%;
+			}
+
+			100% {
+				width: 100%;
+			}
+		}
+
+	.orange {
+		background-color: #FFA400;
+		z-index: 4;
+		top: 46%;
+		height: 11px;
+		animation-name: oSlideIn;
+		animation-duration: 2400ms;
+	}
+
+		@keyframes oSlideIn {
+			0% {
+				width: 0%;
+			}
+
+			24% {
+				width: 0%;
+			}
+
+			44% {
+				width: 100%;
+			}
+
+			100% {
+				width: 100%;
+			}
+		}
+
+	.white {
+		background-color: #FFF;
+		height: 100%;
+		z-index: 3;
+	}
+
+/* contents */
+	.contents {
+		width: 32%;
+		height: 100%;
+		z-index: 2;
+		position: absolute;
+	}
+
+	.name {
+		position: fixed;
+		top: 16px;
+		left: 16px;
+	}
+
+	.category {
+		margin-top: 36px;
+		color: #999;
+	}
+
+	.link {
+		position: fixed;
+		left: -68px;
+		bottom: 100px;
+		transform: rotate(90deg);
+	}
+
+	.link p {
+		float: left;
+		margin-left: 24px;
+		color: #999;
+	}
+
+	.name, .link {
+		animation-duration: 2800ms;
+		animation-name: fadeIn;
+	}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+				margin-left: -20px;
+			}
+
+			72% {
+				opacity: 0;
+				margin-left: -20px;
+			}
+
+			100% {
+				opacity: 1;
+				margin-left: 0;
+			}
+		}
+
+@media (min-aspect-ratio:4/3) {
+	/* list */
+		.list {
+			position: absolute;
+			text-align: right;
+			min-height: 320px;
+			right: 16px;
+			top: 28%;
+		}
+
+	.contents {
+	 background-color: #FFF;	
+	}
+
+	.list {
+		animation-duration: 2800ms;
+		animation-name: fadeIn;
+	}
+
+	.dt-img {
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		overflow: hidden;
+	}
+
+	.dt-img img {
+		width: 100%;
+	}
+
+	.sp-img {
+		display: none;
+	}
+}
+
+@media (max-aspect-ratio:4/3) {
+	/* list */
+		.list {
+			position: fixed;
+			width: 240px;
+			height: 240px;
+			border-radius: 120px;
+			right: -340px;
+			margin: 120px;
+			/*  background: #FF0; */
+		}
+
+		.list ul {
+			list-style: none;
+			padding: 0;
+		}
+		.list li {
+			height: 1.4em;
+			padding: 0.2em;
+			margin-top: 0.2em;
+			text-align: right;
+		}
+
+		.list a {
+			color: white;
+			text-decoration: none;
+		}
+
+			.list li:nth-of-type(1) {
+				transform: rotate(-22.5deg);
+				position: absolute;
+				left: -28px;
+				top: 148px;
+			}
+			.list li:nth-of-type(2) {
+				transform: rotate(-30deg);
+				position: absolute;
+				left: -74px;
+				top: 174px;
+			}
+			.list li:nth-of-type(3) {
+				transform: rotate(-60deg);
+				position: absolute;
+				left: -24px;
+				top: 240px;
+			}
+			.list li:nth-of-type(4) {
+				transform: rotate(-82.5deg);
+				position: absolute;
+				left: 84px;
+				top: 242px;
+			}
+			.list li:nth-of-type(5) {
+				transform: rotate(-90deg);
+				position: absolute;
+				left: 78px;
+				top: 260px;
+			}
+			.list li:nth-of-type(6) {
+				transform: rotate(-120deg);
+				position: absolute;
+				left: 158px;
+				top: 250px;
+			}
+			.list li:nth-of-type(7) {
+				transform: rotate(-150deg);
+				position: absolute;
+				left: 222px;
+				top: 192px;
+			}
+			.list li:nth-of-type(8) {
+				transform: rotate(-180deg);
+				position: absolute;
+				left: 246px;
+				top: 120px;
+			}
+
+	.sp-img {
+		display: block;
+		z-index: -1;
+		width: 100%;
+		overflow: hidden;
+		height: auto;
+	}
+
+	.sp-img img {
+		height: 100vh;
+		opacity: 0.32;
+	}
+
+	.dt-img {
+		display: none;
+	}
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="first-animation">
+		<div class="black"></div>
+		<div class="orange"></div>
+		<div class="white"></div>
+	</div>
+	<div class="contents">
+		<div class="name">
+			<h1>KOHEI YAMAMOTO</h1>
+			<h2>Font / Logo Designer</h2>
+		</div>
+		<div class="list">
+		  <ul>
+		    <li><p>Font</p></li>
+		    <li><a href="#"><h1>Soso Serif</h1></a></li>
+		    <li><a href="#"><h1>Momentum</h1></a></li>
+		    <li><p>Logo</p></li>
+		    <li><a href="#"><h1>Kreaate</h1></a></li>
+		    <li><a href="#"><h1>ChibiLab.</h1></a></li>
+		    <li><a href="#"><h1>PORME</h1></a></li>
+		    <li><a href="#"><h1>Azit</h1></a></li>
+		  </ul>
+		</div>
+		<div class="link">
+			<a href="about.html"><p>About</p></a>
+			<a href="https://note.mu/koheyam"><p>note</p></a>
+			<a href="#"><p>Contact</p></a>
+		</div>
+	</div>
+	<div class="dt-img">
+		<img src="profile-mono.jpg" class="top-img">
+	</div>
+	<div class="sp-img">
+		<div>
+			<img src="profile-mono.jpg" class="top-img">
+		</div>
+		<a href="#">
+			<img src="profile-mono.jpg" class="top-img">
+		</a>
+		<a href="#">
+			<img src="profile-mono.jpg" class="top-img">
+		</a>
+		<a href="#">
+			<img src="profile-mono.jpg" class="top-img">
+		</a>
+		<a href="#">
+			<img src="profile-mono.jpg" class="top-img">
+		</a>
+		<a href="#">
+			<img src="profile-mono.jpg" class="top-img">
+		</a>
+		<a href="#">
+			<img src="profile-mono.jpg" class="top-img">
+		</a>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var $win = $(window);
+	$win.on('load resize', function() { 
+		if (window.matchMedia('(max-aspect-ratio:4/3)').matches) { 
+			/* spJs */
+			$(function() {
+			/* rotate */
+				var rotate = function(x, angle) {
+					x.css({
+						"transform" : "rotate("+angle+"deg)"
+					});
+				}
+				$win.scroll(function(){
+					rotate($(".list"), $win.scrollTop() / $win.height() * 30);
+				})
+			
+			/* fadeScrollIn */
+				$('.list').css("opacity","0");
+				var y = $('.list');
+				var range = $win.height()/3;
+				$win.on('scroll', function () {
+					var scrollTop = $(this).scrollTop(),
+						height = y.outerHeight(),
+						calc = (scrollTop - range) / range - 1;
+					y.css({ 'opacity': calc });
+
+					if (calc > '1') {
+						y.css({ 'opacity': 1 });
+					} else if ( calc < '0' ) {
+						y.css({ 'opacity': 0 });
+					}
+				});
+			});
+		} else {
+			/* dtJs */
+			$(function(){
+				$(".soso").hover(function(){
+					$(".top-img").attr("src","img/soso.png")
+				});
+				$(".momentum").hover(function(){
+					$(".top-img").attr("src","img/momentum.png")
+				});
+				$(".kreaate").hover(function(){
+					$(".top-img").attr("src","img/kreaate.png")
+				});
+				$(".chibi").hover(function(){
+					$(".top-img").attr("src","img/chibi.png")
+				});
+				$(".porme").hover(function(){
+					$(".top-img").attr("src","img/porme.png")
+				});
+				$(".azit").hover(function(){
+					$(".top-img").attr("src","img/azit.png")
+				});
+			});
+		}
+	});
+</script>
+</body>
