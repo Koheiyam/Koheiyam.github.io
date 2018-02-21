@@ -23,7 +23,7 @@
 
 		h2 {
 			font-weight: 400;
-			font-size: 1.25vw;
+			font-size: 1.248vw;
 			margin-top: 2vw;
 		}
 
@@ -60,6 +60,71 @@
 			margin-right: auto;
 		}
 
+		body {
+			animation-duration: 3000ms;
+			animation-name: colorChange;
+		}
+
+			@keyframes colorChange {
+				0% {
+					background-color: #FFF;
+				}
+
+				60% {
+					background-color: #FFF;
+				}
+
+				80% {
+					background-color: #040404;
+				}
+
+				100% {
+					background-color: #040404;
+				}
+			}
+
+		#white {
+			animation-duration: 3000ms;
+			animation-name: fadeInW;
+		}
+
+			@keyframes fadeInW {
+				0% {
+					opacity: 0;
+				}
+
+				60% {
+					opacity: 0;
+				}
+
+				80% {
+					opacity: 1;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+
+		#top, .contents, .bottom {
+			animation-duration: 3000ms;
+			animation-name: fadeIn;
+		}
+
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+
+				86% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+
 		.top {
 			position: relative;
 			height: 56vw;
@@ -78,6 +143,38 @@
 			max-width: 460.8px;
 			position: absolute;
 		}
+
+		#brown {
+			opacity: 0;
+			animation-duration: 3000ms;
+			animation-name: fadeOut;
+		}
+
+			@keyframes fadeOut {
+				0% {
+					opacity: 0;
+				}
+
+				16% {
+					opacity: 0;
+				}
+
+				48% {
+					opacity: 1;
+				}
+
+				59% {
+					opacity: 1;
+				}
+
+				79% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 0;
+				}
+			}
 
 		.border {
 			width: 102%;
@@ -104,18 +201,17 @@
 
 	@media (max-width: 900px){
 		h1 {
-			font-size: 4vw;
+			font-size: 18px;
 		}
 
 		h2 {
-			font-size: 3.42vw;
-			margin-top: 3vw;
+			font-size: 15.4px;
 		}
 
 		p {
-			font-size: 2vw;
-			line-height: 4vw;
-			margin-top: 4vw;
+			font-size: 12px;
+			line-height: 18px;
+			margin-top: 24px;
 		}
 
 		.contents {
@@ -123,6 +219,14 @@
 			margin-top: 16.6%;
 			margin-left: auto;
 			margin-right: auto;
+		}
+
+		.history {
+			margin-top: 19.2%;
+		}
+
+		.works {
+			margin-top: 19.2%;
 		}
 	}
 
@@ -172,43 +276,47 @@
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="top">
-			<img src="img/top.jpg">
-			<div class="name">
-				<img src="img/name-white.svg">
-		<!--	<img src="#"> -->
+	<div class="bg-black">
+		<div class="container">
+			<div class="top">
+				<img id="top" src="img/top.jpg">
+				<div class="name">
+					<img id="white" src="img/name-white.svg">
+					<img id="brown" src="img/name-brown.svg">
+				</div>
 			</div>
-		</div>
-		<div class="profile contents">
-			<h1>Kohei Yamamoto</h1>
-			<h2>Font / Logo Designer</h2>
-			<p class="en">
-				Born in Japan in 1996. Yamamoto has been actively involved in~~.
-			</p>
-			<p class="jp">
-				1996年生。数学科を経て、現在デザイン専門学校に在学。ロゴデザインを中心にビジュアルアイデンティティの製作を行う。趣味はオセロとビリヤード。ここ興味関心。
-			</p>
-			<div class="border"></div>
-		</div>
-		<div class="contents">
-			<img src="img/prof.jpg">
-			<div class="history">
+			<div class="profile contents">
+				<h1>Kohei Yamamoto</h1>
+				<h2>Font / Logo Designer</h2>
 				<p class="en">
 					Born in Japan in 1996. Yamamoto has been actively involved in~~.
 				</p>
 				<p class="jp">
-					製作プロセス云々を書くわけですが、考えてフィロソフィーを唱えて大事なのは想いと使う人が使いたくなる気持ちにさせることだよねってことをたぶん言いたいんだと思う。活動履歴って何書けばええねん。なにかあるかな...。
+					1996年生。数学科を経て、現在デザイン専門学校に在学。ロゴデザインを中心にビジュアルアイデンティティの製作を行う。趣味はオセロとビリヤード。ここ興味関心。
 				</p>
+				<div class="border"></div>
 			</div>
-			<div class="works">
-				<h1>Works</h1>
-				<p><a href="#">Soso Serif</a>&emsp;Font Design, 2018</p>
-				<p><a href="#">Azit</a>&emsp;Logo Design, 2017</p>
+			<div class="contents">
+				<img src="img/prof.jpg">
+				<div class="history">
+					<p class="en">
+						Born in Japan in 1996. Yamamoto has been actively involved in~~.
+					</p>
+					<p class="jp">
+						製作プロセス云々を書くわけですが、考えてフィロソフィーを唱えて大事なのは想いと使う人が使いたくなる気持ちにさせることだよねってことをたぶん言いたいんだと思う。活動履歴って何書けばええねん。なにかあるかな...。
+					</p>
+				</div>
+				<div class="works">
+					<h1>Works</h1>
+					<p>coming soon...</p>
+					<!--
+					<p><a href="#">Soso Serif</a>&emsp;Font Design, 2018</p>
+					<p><a href="#">Azit</a>&emsp;Logo Design, 2017</p>
+					-->
+				</div>
+			</div>
+			<div class="bottom">
+				<img src="img/bottom.jpg">
 			</div>
 		</div>
-		<div class="bottom">
-			<img src="img/bottom.jpg">
-		</div>
-	</div>
 </body>
