@@ -16,8 +16,8 @@
 <meta property="og:title" content="Soso Serif | Kohei Yamamoto">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://syoneco.cat/font/soso/soso.html">
-<meta property="og:image" content="https://koheiyam.github.io/i-v.png">
-<meta property="og:description" content="Soso Serif is a serif typeface. 'Soso' is words of Japanese '楚々' and means graceful.">
+<meta property="og:image" content="https://koheiyam.github.io/font/soso/thumbnail.png">
+<meta property="og:description" content="Soso Serif is a serif typeface designed by Kohei Yamamoto. The name comes from a word of Japanese '楚々' that means graceful. It features shaved serifs, loose curve and linear stroke and is intended for short to medium length texts.">
 
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107069590-1"></script>
@@ -88,46 +88,25 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				bottom: 0;
 				left: 0;
 				z-index: 0;
+				overflow: hidden;
 			}
 
 			#top img {
-				width: 100%;
-				height: 100%;
+				width: 105%;
+				height: 105%;
 				position: center;
 				object-fit: cover;
 			}
 
-			.header2 {
-				position: absolute;
-				top: 0;
-			}
-
 			/* header-animation */
-				.header1 {
+				.header {
 					animation-duration: 1200ms;
-					animation-name: fadeSlideInA;
+					animation-name: fadeSlideIn;
 				}
 
-				@keyframes fadeSlideInA {
+				@keyframes fadeSlideIn {
 				    0% {
 				    	margin-top: -2.8%;
-				        opacity: 0;
-				    }
-
-				    100% {
-				    	margin-top: 0;
-				        opacity: 1;
-				    }
-				}
-
-				.header2 {
-					animation-duration: 1200ms;
-					animation-name: fadeSlideInB;
-				}
-
-				@keyframes fadeSlideInB {
-				    0% {
-				    	margin-top: -1.2%;
 				        opacity: 0;
 				    }
 
@@ -307,8 +286,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	<div class="container bg-1">
 		<div id="top">
 			<div class="imgs">
-				<img src="header1.svg" class="header1">
-				<!-- <img src="header2.svg" class="header2"> -->
+				<img src="header.svg" class="header">
 			</div>
 		</div>
 
@@ -368,12 +346,11 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				<h2>Soso Serif</h2>
 				<p class="min">ver 1.0.0</p>
 				<p>
-					Soso Serifは日本語の "楚々" をイメージワードに設計されたセリフフォント。<br>
-					ゆったりした曲線と凛々しいストロークが特徴的な書体です。
-					<br><br>
+					Soso Serifは日本語の "楚々" をイメージワードに設計されたセリフフォント。
+					ゆったりした曲線と凛々しいストローク、そして斜めなセリフが特徴的な書体です。
 					"楚々" 本来の清く美しい姿を意識しつつ、ふところを広くとることで可読性を最大限に引き出しました。<br><br>
-					以下のボタンからBold体(Soso Serif Display)をダウンロードできます。<br>
-					また今後も文字や記号を充実にくわえ、本文用のレギュラー体やイタリック体の開発を予定しています。<br><br>
+					Soso Serif is a serif typeface. The name comes from a word of Japanese '楚々' that means graceful. It features shaved serifs, loose curve and linear stroke and is intended for short to medium length texts. <br><br>
+
 					＿<br>
 					フォントご利用の際には<a href="#">フォントの使用について</a>をご一読ください。
 				</p>
