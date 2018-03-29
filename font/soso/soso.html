@@ -42,7 +42,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			margin: 0;
 		}
 
-		h1,h2,p {
+		h1,h2,p,span {
 			font-family: 'Noto Sans', Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
 			color: #1F1D18;
 			margin: 0;
@@ -212,6 +212,10 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				    transform: scale(1,1);
 				}
 
+				.btn a {
+					text-decoration: none;
+				}
+
 	/* Desktop */
 		h1 {
 			font-size: 48px;
@@ -226,6 +230,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 			font-size: 20px;
 			margin: 40px 0;
 		}
+
 
 		.min {
 			margin-top: 8px;
@@ -286,7 +291,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	<div class="container bg-1">
 		<div id="top">
 			<div class="imgs">
-				<img src="header.svg" class="header">
+				<img src="img/header.svg" class="header">
 			</div>
 		</div>
 
@@ -304,12 +309,12 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 						ppppppppp<br>
 					</h2>
 				</div>
-				<img src="letter-S.svg">
+				<img src="img/letter-S.svg">
 			</div>
 		</div>
 		<div class="container bg-2">
 			<div class="box box-r">
-				<img src="letter-G.svg">
+				<img src="img/letter-G.svg">
 				<div class="text">
 					<h1>堂々とした風格。</h1>
 					<h2>
@@ -329,14 +334,14 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 						ひと文字ずつにメリハリが生まれました。<br>
 					</h2>
 				</div>
-				<img src="letter-d.svg">
+				<img src="img/letter-d.svg">
 			</div>
 		</div>
 	</div>
 
 	<div class="container bg-1">
 		<div id="character">
-			<img src="character.svg">
+			<img src="img/character.svg">
 		</div>
 	</div>
 
@@ -355,7 +360,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 					フォントご利用の際には<a href="#">フォントの使用について</a>をご一読ください。
 				</p>
 				<div class="btn">
-					<p><span>Download</span></p>
+					<a href="resource/SosoSerif.zip" download="SosoSerif.zip"><span>Download</span></a>
 				</div>
 				<p class="min">ver 1.0.0</p>
 			</article>
