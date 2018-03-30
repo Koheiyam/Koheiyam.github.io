@@ -5,7 +5,6 @@
 <meta http-equiv=”content-language” content=”ja”>
 <title>Soso Serif</title>
 <meta name="description" content="Designer / Kohei Yamamoto">
-<link href="../css/main.css" rel="stylesheet">
 <link rel="icon" href="../favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -167,7 +166,7 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 
 			/* btn */
 
-				.btn {
+				.btn{
 				    line-height: 48px;
 				    height: 48px;
 				    text-align: center;
@@ -212,8 +211,9 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				    transform: scale(1,1);
 				}
 
-				.btn a {
+				#contents a {
 					text-decoration: none;
+					z-index: 2;
 				}
 
 	/* Desktop */
@@ -304,9 +304,8 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				<div class="text">
 					<h1>ゆったりしたくびれ。</h1>
 					<h2>
-						<br>
-						<br>
-						ppppppppp<br>
+						より自然により美しい、<br>
+						撫でたくなるようなフォルム。
 					</h2>
 				</div>
 				<img src="img/letter-S.svg">
@@ -318,9 +317,8 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				<div class="text">
 					<h1>堂々とした風格。</h1>
 					<h2>
-						pppp<br>
-						ppppp<br>
-						ppppppppp<br>
+						大胆に大きいふところが、<br>
+						自信にあふれた印象をあたえます。
 					</h2>
 				</div>
 			</div>
@@ -330,8 +328,8 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 				<div class="text">
 					<h1>スラッとした立ち姿。</h1>
 					<h2>
-						曲線と直線を極端に使い分けることで、<br>
-						ひと文字ずつにメリハリが生まれました。<br>
+						曲線と直線を極端に使い分けたことで、<br>
+						ひと文字ずつにメリハリが生まれました。
 					</h2>
 				</div>
 				<img src="img/letter-d.svg">
@@ -355,21 +353,18 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 					ゆったりした曲線と凛々しいストローク、そして斜めなセリフが特徴的な書体です。
 					"楚々" 本来の清く美しい姿を意識しつつ、ふところを広くとることで可読性を最大限に引き出しました。<br><br>
 					Soso Serif is a serif typeface. The name comes from a word of Japanese '楚々' that means graceful. It features shaved serifs, loose curve and linear stroke and is intended for short to medium length texts. <br><br>
-
-					＿<br>
-					フォントご利用の際には<a href="#">フォントの使用について</a>をご一読ください。
 				</p>
-				<div class="btn">
-					<a href="https://github.com/Koheiyam/Koheiyam.github.io/font/soso/resource/SosoSerif.zip" onclick="ga('send', 'event', 'download', 'clicked', 'SosoSerif');"><span>Download</span></a>
-				</div>
+				<a href="https://Koheiyam.github.io/font/soso/resource/SosoSerif.zip" onclick="ga('send', 'event', 'download', 'clicked', 'SosoSerif');">
+					<div class="btn">
+						<span>Download</span>
+					</div>
+				</a>
 				<p class="min">ver 1.0.0</p>
 			</article>
 		</div>
 	</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/jquery.pjax.min.js"></script>
-		<script type="text/javascript" src="../js/main.js"></script>
 		<script type="text/javascript">
 			$(function(){
 			  $('.box img, .box div').css("opacity","0");
