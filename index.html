@@ -66,13 +66,6 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 		}
 	}
 
-/* profile */
-	.profile {
-		padding-top: 120px;
-		padding-bottom: 8px;
-		background-color: #FFEECC;
-	}
-
 @media (min-width: 783px){
 	.top-container {
 		padding: 0;
@@ -94,11 +87,6 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 @media (max-width: 784px){
 	.top-container {
 		padding: 0;
-	}
-
-	.profile p, .profile h3, .top-container {
-		margin-left: 16px;
-		margin-right: 16px;
 	}
 }
 </style>
@@ -167,29 +155,9 @@ ga('send', 'pageview', window.location.pathname.replace(/^\/?/, '/') + window.lo
 	<div class="footer">
 	<div class="footer">
 		<div class="footer-margin">
-			<a href="index.html">
-				<img src="img/identity/footer.svg">
-			</a>
 			<h4>© Kohei yamamoto</h4>
 		</div>
 	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$('.profile').css("background-color","rgba(255,238,204,0.2)");
-				$(window).scroll(function (){
-				    $(".profile").each(function(){
-				      var imgPos = $(this).offset().top;    
-				      var scroll = $(window).scrollTop();
-				      var windowHeight = $(window).height();
-				      if (scroll > imgPos - windowHeight + windowHeight/1.8){
-				        $('.profile').css({"background-color":"rgba(255,238,204,1)","transition":"background-color 0.5s"});
-				      } else {
-				        $('.profile').css("background-color","rgba(255,238,204,0.2)");
-				      }
-				    });
-				  });
-			});
-		</script>
 </body>
