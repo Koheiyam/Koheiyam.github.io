@@ -1,0 +1,366 @@
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			background-color: #F9F9FA;
+			overflow: hidden;
+		}
+
+		section {
+			position: relative;
+			display: block;
+			margin-top: 12%;
+			margin-right: auto;
+			margin-left: auto;
+			padding-left: 8%;
+			width: 450px;
+			height: 400px;
+		}
+
+		img {
+			width: 100px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.r-st, .r-rd, .c-st, .c-rd, .st, .rd {
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+		/* block */
+			.st {
+				position: relative;
+				z-index: 3;
+				animation-name: st;
+			}
+
+		 		@keyframes st {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					16% {
+						transform: translate(0px,0px);
+					}
+
+					32% {
+						transform: translate(0px,-29px);
+					}
+
+					48% {
+						transform: translate(0px,-29px);
+					}
+
+					64% {
+						transform: translate(0px,-29px);
+					}
+
+					80% {
+						transform: translate(0px,0px);
+					}
+
+					96% {
+						transform: translate(0px,0px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+
+			.nd {
+				position: relative;
+				z-index: 2;
+			}
+
+
+			.rd {
+				position: relative;
+				z-index: 1;
+				animation-name: rd;
+			}
+
+		 		@keyframes rd {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					16% {
+						transform: translate(0px,0px);
+					}
+
+					32% {
+						transform: translate(0px,29px);
+					}
+
+					48% {
+						transform: translate(0px,29px);
+					}
+
+					64% {
+						transform: translate(0px,29px);
+					}
+
+					80% {
+						transform: translate(0px,0px);
+					}
+
+					96% {
+						transform: translate(0px,0px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+
+			.nd, .rd {
+				margin-top: -58px;
+			}
+
+		 /* row */
+		 	.r {
+		 		display: block;
+		 		position: absolute;
+		 	}
+
+		 	.r-st {
+		 		margin-left: 100px;
+		 		margin-top: 58px;
+		 		z-index: 3;
+		 		animation-name: r-st;
+		 	}
+
+				@keyframes r-st {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					16% {
+						transform: translate(25px,15px);
+					}
+
+					32% {
+						transform: translate(25px,15px);
+					}
+
+					48% {
+						transform: translate(25px,15px);
+					}
+
+					64% {
+						transform: translate(0px,0px);
+					}
+
+					80% {
+						transform: translate(0px,0px);
+					}
+
+					96% {
+						transform: translate(0px,0px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+
+		 	.r-nd {
+		 		margin-left: 50px;
+		 		margin-top: 29px;
+		 		z-index: 2;
+		 	}
+
+		 	.r-rd {
+		 		z-index: 1;
+		 		animation-name: r-rd;
+		 	}
+
+				@keyframes r-rd {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					16% {
+						transform: translate(-25px,-15px);
+					}
+
+					32% {
+						transform: translate(-25px,-15px);
+					}
+
+					48% {
+						transform: translate(-25px,-15px);
+					}
+
+					64% {
+						transform: translate(0px,0px);
+					}
+
+					80% {
+						transform: translate(0px,0px);
+					}
+
+					96% {
+						transform: translate(0px,0px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+
+		 /* case */
+		 	.c {
+		 		display: block;
+		 		position: absolute;
+		 		animation-name: c;
+		 		animation-duration: #;
+		 	}
+
+		 	.c-st {
+		 		margin-top: 58px;
+		 		z-index: 3;
+		 		animation-name: c-st;
+		 	}
+
+				@keyframes c-st {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					16% {
+						transform: translate(0px,0px);
+					}
+
+					32% {
+						transform: translate(0px,0px);
+					}
+
+					48% {
+						transform: translate(-25px,29px);
+					}
+
+					64% {
+						transform: translate(-25px,29px);
+					}
+
+					80% {
+						transform: translate(-25px,29px);
+					}
+
+					96% {
+						transform: translate(0px,0px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+
+		 	.c-nd {
+		 		margin-left: 50px;
+		 		margin-top: 29px;
+		 		z-index: 2;
+		 	}
+
+		 	.c-rd {
+		 		margin-left: 100px;
+		 		z-index: 1;
+		 		animation-name: c-rd;
+		 	}
+
+				@keyframes c-rd {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					16% {
+						transform: translate(0px,0px);
+					}
+
+					32% {
+						transform: translate(0px,0px);
+					}
+
+					48% {
+						transform: translate(25px,-29px);
+					}
+
+					64% {
+						transform: translate(25px,-29px);
+					}
+
+					80% {
+						transform: translate(25px,-29px);
+					}
+
+					96% {
+						transform: translate(0px,0px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="c-st c">
+			<div class="r-st r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+			<div class="r-nd r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+			<div class="r-rd r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+		</div>
+		<div class="c-nd c">
+			<div class="r-st r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+			<div class="r-nd r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+			<div class="r-rd r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+		</div>
+		<div class="c-rd c">
+			<div class="r-st r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+			<div class="r-nd r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+			<div class="r-rd r">
+				<img src="hex.svg" class="st">
+				<img src="hex.svg" class="nd">
+				<img src="hex.svg" class="rd">
+			</div>
+		</div>
+	</section>
+</body>
