@@ -1,0 +1,227 @@
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../reset.css">
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			background-color: #F9F9FA;
+			overflow: hidden;
+			position: relative;
+		}
+
+		section {
+			position: absolute;
+			display: block;
+			margin: auto;
+			width: 160px;
+			height: 160px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.circle {
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			margin: 0;
+			padding: 0;
+			background-color: #242424;
+			border-radius: 50%;
+		}
+
+		.f .st, .f .nd, .f .rd, .f .th, .b .st, .b .nd, .b .rd {
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+		}
+		/* s */
+			.s {
+				position: absolute;
+			}
+
+			.s .st {
+
+			}
+
+			.s .nd {
+				margin-left: 64px;
+			}
+
+			.s .rd {
+				margin-left: 64px;
+				margin-top: 64px;
+			}
+
+			.s .th {
+				margin-top: 64px;	
+			}
+
+		/* f */
+			.f .st {
+				animation-name: f-st;
+			}
+
+				@keyframes f-st {
+					0% {
+						transform: translate(8.6px,-32px);
+					}
+
+					33% {
+						transform: translate(64px,-64px);
+					}
+
+					100% {
+						transform: translate(64px,-64px);
+					}
+				}
+			
+			.f .nd {
+				animation-name: f-nd;
+			}
+
+				@keyframes f-nd {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					33% {
+						transform: translate(-55.4px,-32px);
+					}
+
+					66% {
+						transform: translate(0px,0px);
+					}
+
+					100% {
+						transform: translate(55.4px,-32px);
+					}
+				}
+			
+			.f .rd {
+				animation-name: f-rd;
+			}
+
+				@keyframes f-rd {
+					0% {
+						transform: translate(0px,0px);
+					}
+
+					33% {
+						transform: translate(0px,0px);
+					}
+
+					66% {
+						transform: translate(-55.4px,-32px);
+					}
+
+					100% {
+						transform: translate(-55.4px,-32px);
+					}
+				}
+			
+			.f .th {
+				animation-name: f-th;
+			}
+
+				@keyframes f-th {
+					0% {
+						transform: translate(8.6px,-32px);
+					}
+
+					33% {
+						transform: translate(8.6px,-32px);
+					}
+
+					66% {
+						transform: translate(8.6px,-96px);
+					}
+
+					100% {
+						transform: translate(8.6px,-96px);
+					}
+				}
+		/* b */
+			.b .st {
+				animation-name: b-st;
+			}
+
+				@keyframes b-st {
+					0% {
+						transform: translate(64px,-64px);
+					}
+
+					33% {
+						transform: translate(119.4px,-32px);
+					}
+
+					66% {
+						transform: translate(119.4px,-32px);
+					}
+
+					100% {
+						transform: translate(119.4px,32px);
+					}
+				}
+
+			.b .nd {
+				animation-name: b-nd;
+			}
+
+				@keyframes b-nd {
+					0% {
+						transform: translate(55.4px,-32px);
+					}
+
+					33% {
+						transform: translate(0px,0px);
+					}
+
+					66% {
+						transform: translate(0px,64px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+			.b .rd {
+				animation-name: b-rd;
+			}
+
+				@keyframes b-rd {
+					0% {
+						transform: translate(55.4px,-32px);
+					}
+
+					33% {
+						transform: translate(55.4px,-32px);
+					}
+
+					66% {
+						transform: translate(55.4px,-32px);
+					}
+
+					100% {
+						transform: translate(0px,0px);
+					}
+				}
+		</style>
+</head>
+<body>
+	<section>
+		<div class="s f">
+			<div class="circle st"></div>
+			<div class="circle nd"></div>
+			<div class="circle rd"></div>
+			<div class="circle th"></div>
+		</div>
+		<div class="s b">
+			<div class="circle st"></div>
+			<div class="circle nd"></div>
+			<div class="circle rd"></div>
+		</div>
+	</section>
+</body>
