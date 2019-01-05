@@ -1,0 +1,113 @@
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="test/reset.css">
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			background-color: #F9F9FA;
+			overflow: hidden;
+			position: relative;
+		}
+
+		section {
+			position: absolute;
+			display: block;
+			margin: auto;
+			width: 400px;
+			height: 400px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 12%;
+		}
+
+		#h, #m {
+			display: inherit;
+			position: absolute;
+			border-right:2px solid #242424;
+			width: 59px;
+			height: 60px;
+			margin-top:10px;
+			transform-origin: 60px 60px;
+		}
+
+		#h{
+			animation: rotate 144s linear 0s infinite;
+		}
+		#m{
+			animation: rotate 12s linear 0s infinite;
+
+		}
+
+			@keyframes rotate {
+				0% {transform: rotate(0deg);}
+				100% {transform: rotate(360deg);}
+			}
+
+		.c .d {
+			display: block;
+			position: inherit;
+			width: 120px;
+			height: 120px;
+			margin: auto;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.d1 {
+			transform: translate(-270px,-76px) rotate(240deg);
+		}
+
+		.d2 {
+			transform: translate(52px,30px);
+		}
+
+		.d3 {
+			transform: translate(-201px,256px) rotate(120deg);
+		}
+
+
+		</style>
+</head>
+<body>
+	<section>
+	<!--	<div class="c">
+			<div id="h"></div>
+			<div id="m"></div>
+		</div> -->
+		<div class="d d1">
+			<div id="h"></div>
+			<div id="m"></div>
+		</div>
+		<div class="d d2">
+			<div id="h"></div>
+			<div id="m"></div>
+		</div>
+		<div class="d d3">
+			<div id="h"></div>
+			<div id="m"></div>
+		</div>
+<script>
+	async function adjust(){
+		const obj = await fetch("https://ntp-a1.nict.go.jp/cgi-bin/json").then(e => e.json())
+		const datetime = new Date(obj.st * 1000)
+		const date = new Date(datetime.getFullYear(), datetime.getMonth(), datetime.getDate())
+		const sec = (datetime - date) / 1000
+		
+		document.querySelector("#h").style.animationDelay
+			= document.querySelector("#m").style.animationDelay
+	}
+	
+	document.addEventListener("visibilitychange", function(eve){
+		document.visibilityState === "visible" && adjust()
+	})
+	
+	adjust()
+</script>
+	</section>
+</body>
