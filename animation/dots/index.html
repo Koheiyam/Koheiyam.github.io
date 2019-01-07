@@ -15,8 +15,8 @@
 			position: absolute;
 			display: block;
 			margin: auto;
-			width: 160px;
-			height: 160px;
+			width: 320px;
+			height: 80px;
 			top: 0;
 			right: 0;
 			bottom: 0;
@@ -25,8 +25,8 @@
 
 		.circle {
 			position: absolute;
-			width: 18px;
-			height: 18px;
+			width: 32px;
+			height: 32px;
 			margin: 0;
 			padding: 0;
 			background-color: #242424;
@@ -34,7 +34,7 @@
 		}
 
 		.f .st, .f .nd, .f .rd, .f .th, .b .st, .b .nd, .b .rd {
-			animation-duration: 2s;
+			animation-duration: 4s;
 			animation-iteration-count: infinite;
 		}
 		/* s */
@@ -47,16 +47,16 @@
 			}
 
 			.s .nd {
-				margin-left: 64px;
+				margin-left: 128px;
 			}
 
 			.s .rd {
-				margin-left: 64px;
-				margin-top: 64px;
+				margin-left: 128px;
+				margin-top: 128px;
 			}
 
 			.s .th {
-				margin-top: 64px;	
+				margin-top: 128px;	
 			}
 
 		/* f */
@@ -66,15 +66,15 @@
 
 				@keyframes f-st {
 					0% {
-						transform: translate(8.6px,-32px);
+						transform: translate(17.2px,-64px);
 					}
 
-					33% {
-						transform: translate(64px,-64px);
+					25% {
+						transform: translate(128px,-128px);
 					}
 
 					100% {
-						transform: translate(64px,-64px);
+						transform: translate(128px,-128px);
 					}
 				}
 			
@@ -87,16 +87,20 @@
 						transform: translate(0px,0px);
 					}
 
-					33% {
-						transform: translate(-55.4px,-32px);
+					25% {
+						transform: translate(-110.8px,-64px);
 					}
 
-					66% {
+					50% {
 						transform: translate(0px,0px);
 					}
 
+					75% {
+						transform: translate(110.8px,-64px);
+					}
+
 					100% {
-						transform: translate(55.4px,-32px);
+						transform: translate(110.8px,-64px);
 					}
 				}
 			
@@ -109,16 +113,16 @@
 						transform: translate(0px,0px);
 					}
 
-					33% {
+					25% {
 						transform: translate(0px,0px);
 					}
 
-					66% {
-						transform: translate(-55.4px,-32px);
+					50% {
+						transform: translate(-110.8px,-64px);
 					}
 
 					100% {
-						transform: translate(-55.4px,-32px);
+						transform: translate(-110.8px,-64px);
 					}
 				}
 			
@@ -128,19 +132,19 @@
 
 				@keyframes f-th {
 					0% {
-						transform: translate(8.6px,-32px);
+						transform: translate(17.2px,-64px);
 					}
 
-					33% {
-						transform: translate(8.6px,-32px);
+					25% {
+						transform: translate(17.2px,-64px);
 					}
 
-					66% {
-						transform: translate(8.6px,-96px);
+					50% {
+						transform: translate(17.2px,-192px);
 					}
 
 					100% {
-						transform: translate(8.6px,-96px);
+						transform: translate(17.2px,-192px);
 					}
 				}
 		/* b */
@@ -150,19 +154,23 @@
 
 				@keyframes b-st {
 					0% {
-						transform: translate(64px,-64px);
+						transform: translate(128px,-128px);
 					}
 
-					33% {
-						transform: translate(119.4px,-32px);
+					25% {
+						transform: translate(238.8px,-64px);
 					}
 
-					66% {
-						transform: translate(119.4px,-32px);
+					50% {
+						transform: translate(238.8px,-64px);
+					}
+
+					75% {
+						transform: translate(238.8px,64px);
 					}
 
 					100% {
-						transform: translate(119.4px,32px);
+						transform: translate(238.8px,64px);
 					}
 				}
 
@@ -172,15 +180,19 @@
 
 				@keyframes b-nd {
 					0% {
-						transform: translate(55.4px,-32px);
+						transform: translate(110.8px,-64px);
 					}
 
-					33% {
+					25% {
 						transform: translate(0px,0px);
 					}
 
-					66% {
-						transform: translate(0px,64px);
+					50% {
+						transform: translate(0px,128px);
+					}
+
+					75% {
+						transform: translate(0px,0px);
 					}
 
 					100% {
@@ -193,15 +205,19 @@
 
 				@keyframes b-rd {
 					0% {
-						transform: translate(55.4px,-32px);
+						transform: translate(110.8px,-64px);
 					}
 
-					33% {
-						transform: translate(55.4px,-32px);
+					25% {
+						transform: translate(110.8px,-64px);
 					}
 
-					66% {
-						transform: translate(55.4px,-32px);
+					50% {
+						transform: translate(110.8px,-64px);
+					}
+
+					75% {
+						transform: translate(0px,0px);
 					}
 
 					100% {
