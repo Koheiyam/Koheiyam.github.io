@@ -1,0 +1,140 @@
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../reset.css">
+	<style type="text/css">
+		body {
+			width: 1100px;
+			height: 100%;
+			margin: 0;
+			background-color: #242424;
+			position: relative;
+		}
+
+		section {
+			position: absolute;
+			display: block;
+			margin: auto;
+			width: 1083px;
+			height: 600px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+		}
+
+		#vertical {
+			margin-left: -19px;
+			z-index: 1;
+		}
+
+		.rotate {
+			position: absolute;
+			animation-name: rotate;
+			animation-duration: 16s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			z-index: -1;
+			top: 280px;
+			left: 547px;
+		}
+
+		#radial {
+			position: relative;
+			top: -726px;
+			left: -28px;
+		}
+
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
+		.v-line {
+			position: relative;
+			display: inline-block;
+			height: 600px;
+			background-color: #F9F9FA;
+			animation-name: width;
+			animation-duration: 32s;
+			animation-iteration-count: infinite;
+			width: 15px;
+			margin: 0px 7px;
+		}
+
+			@keyframes width {
+				0% {
+					transform: scaleX(1);
+				}
+
+				50% {
+					transform: scaleX(1.8);
+				}
+
+				75% {
+					transform: scaleX(1.8);
+				}
+
+				100% {
+					transform: scaleX(1);
+				}
+			}
+
+		.r-line {
+			position: absolute;
+			display: inline-block;
+			width: 0;
+			height: 0;
+			background-color: rgba(0,0,0,0);
+			border-style: solid;
+			border-width: 726px 28px 0;
+			border-color: #F9F9FA transparent transparent transparent;
+			transform-origin:bottom;
+		}
+
+		</style>
+</head>
+<body>
+	<section>
+		<div id="vertical"></div>
+		<div class="rotate">
+			<div id="radial"></div>
+		</div>
+	</section>
+	<script type="text/javascript"> /* vertical */
+		for(i = 0;  i < 80; i++){
+			var div = document.createElement("div");
+			div.className = 'v-line';
+			document.getElementById('vertical').appendChild(div);
+		}
+	</script>
+	<script type="text/javascript"> /* radial */
+		for(i = 0;  i < 45; i++){
+			var div = document.createElement("div");
+			div.className = 'r-line';
+			document.getElementById('radial').appendChild(div);
+		}
+	</script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--	<script type="text/javascript">
+		var v_num = $('.v-line').length;
+		$('.v-line').each(function(i,elem){
+			var l = 27 * i;
+			$(elem).css('margin-left', l);
+		}); -->
+	</script>
+	<script type="text/javascript">
+		var r_num = $('.r-line').length;
+		var deg = 360.0/r_num;
+		$('.r-line').each(function(i, elem){
+			var r = "rotate("+ deg*i +"deg)";
+			$(elem).css('transform', r);
+		});
+	</script>
+
+</body>
