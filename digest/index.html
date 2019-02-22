@@ -40,6 +40,17 @@
 	<script>
 		window.ga||(!function(a,e,n,t,o,c,g){a.GoogleAnalyticsObject=o,a.ga=a.ga||function(){(a.ga.q=a.ga.q||[]).push(arguments)},a.ga.l=1*new Date,c=e.createElement(n),g=e.getElementsByTagName(n)[0],c.async=1,c.src="//www.google-analytics.com/analytics.js",g.parentNode.insertBefore(c,g)}(window,document,"script",0,"ga"),ga("create","UA-107069590-1","auto"),ga("send","pageview")),ga("send","pageview",window.location.pathname.replace(/^\/?/,"/")+window.location.search);
 	</script>
+
+	<script>
+		(function(d) {
+			var config = {
+			kitId: 'ynt4hpt',
+			scriptTimeout: 3000,
+			async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+	</script>
 </head>
 
 <body>
@@ -58,7 +69,7 @@
 				Born in Japan in 1996. Tokyo-based graphic designer. I have been actively involved in the creation of meaningful including type design, logo design, branding, and creative design.
 			</p>
 			<p class="jp">
-				1996年生。数学科を経て、現在デザイン専門学校に在学。書体・ロゴデザインを中心にビジュアルアイデンティティの製作を手掛け、クライアントに寄り添いながら意味ある確かな造形を目指す。同人ではショねことして表紙、パッケージデザインをメインに活動している。
+				1996年生。数学科を経て、現在デザイン専門学校に在学。書体・ロゴデザインを中心にビジュアルアイデンティティの制作を手掛け、クライアントに寄り添いながら意味ある確かな造形を目指します。
 			</p>
 			<div class="border"></div>
 		</div>
@@ -73,7 +84,14 @@
 				<p><a href="../article/azit.html" target="_blank">Azit</a>&emsp;Logo Design, 2017</p>
 			</div>
 			<div class="contact">
-				<h2><a href="https://goo.gl/forms/VZNiFYGOH0PZc36B2" target="_blank">Contact</a>&nbsp;></h2>
+				<input type="checkbox" id="btn" />
+				<h2><label for="btn">Contact</label></h2>
+				<form class="" action="https://docs.google.com/forms/d/e/1FAIpQLSdvvueuFOsTgGDeK10uFituqH680yl03hrWx7gzBxfsGZt5nA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" autocomplete="off">
+					<p><label>Name<input type="text" name="entry.1045345722" value="" /></label></p>
+					<p><label>Email<input type="text" name="entry.910667363" value="" /></label></p>
+					<p><label>Message<textarea type="text" name="entry.949027990" value="" /></textarea></label></p>
+					<p><button type="submit">SEND</button></p>
+				</form>
 			</div>
 		</div>
 		<div class="bottom">

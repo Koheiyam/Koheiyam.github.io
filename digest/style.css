@@ -6,30 +6,30 @@ head,body {
 }
 
 h1,h2,p {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'mr-eaves-xl-modern', 'source-han-sans-japanese', sans-serif;
 	font-feature-settings: "pkna" 1;
 	color: #EAEAEA;
 }
 
 h1 {
 	font-weight: 700;
-	font-size: 1.458vw;
+	font-size: 1.8vw;
 }
 
 h2 {
 	font-weight: 400;
 	font-size: 1.248vw;
-	margin-top: 2vw;
+	margin-top: 0.3vw;
 }
 
 p {
 	font-weight: 400;
-	line-height: 2vw;
+	line-height: 1.4vw;
 	margin-top: 2vw;
 }
 
 .en {
-	font-size: 1.08vw;
+	font-size: 1.2vw;
 }
 
 .jp {
@@ -193,6 +193,7 @@ body {
 
 .works p {
 	color: #CCC;
+	font-size: 16px;
 }
 
 .contact {
@@ -203,17 +204,80 @@ body {
 	color: #CCC;
 }
 
+	#btn {
+		display: none;
+	}
+
+	#btn:checked ~ form {
+		display: block;
+	}
+
+	form {
+		width: 280px;
+		position: relative;
+		display: none;
+		text-align: left;
+	}
+
+	form p {
+		margin-top: 40px;
+	}
+
+	form input, form textarea {
+		margin: 0;
+		padding: 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		color: #EAEAEA;
+		font-size: 14px;
+	}
+
+	form input {
+		width: 274px;
+		height: 24px;
+		border-bottom: solid #EAEAEA;
+		border-width: 1px;
+		margin-left: 1px;
+		padding: 0 0 4px 6px;
+	}
+
+	form textarea {
+		width: 266px;
+		height: 210px;
+		border: solid #EAEAEA;
+		border-width: 1px;
+		border-radius: 4px;
+		margin-top: 4px;
+		padding: 4px 6px;
+	}
+
+	form button {
+		width: 280px;
+		height: 40px;
+		margin-top: -8px;
+		border: solid #EAEAEA;
+		border-width: 1px;
+		border-radius: 4px;
+		background-color: rgba(0,0,0,0);
+		color: #EAEAEA;
+	}
+
 .bottom {
 	margin-top: 16.6%;
 }
 
 @media (max-width: 900px){
 	h1 {
-		font-size: 18px;
+		font-size: 23px;
 	}
 
 	h2 {
-		font-size: 15.4px;
+		font-size: 16px;
 	}
 
 	p {
@@ -222,7 +286,7 @@ body {
 	}
 
 	.en {
-		font-size: 12.3px;
+		font-size: 14px;
 	}
 
 	.jp {
