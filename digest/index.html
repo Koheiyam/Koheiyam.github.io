@@ -51,6 +51,71 @@
 		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 		})(document);
 	</script>
+	<style type="text/css">
+		#btn {
+			display: none;
+		}
+
+		#btn:checked ~ form {
+			display: block;
+		}
+
+		form {
+			width: 280px;
+			position: relative;
+			display: none;
+			text-align: left;
+		}
+
+		form p {
+			margin-top: 40px;
+		}
+
+		form input, form textarea {
+			margin: 0;
+			padding: 0;
+			background: none;
+			border: none;
+			border-radius: 0;
+			outline: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			color: #EAEAEA;
+			font-size: 14px;
+		}
+
+		form input {
+			width: 274px;
+			height: 24px;
+			border-bottom: solid #EAEAEA;
+			border-width: 1px;
+			margin-left: 1px;
+			padding: 0 0 4px 6px;
+		}
+
+		form textarea {
+			width: 266px;
+			height: 210px;
+			border: solid #EAEAEA;
+			border-width: 1px;
+			border-radius: 4px;
+			margin-top: 4px;
+			padding: 4px 6px;
+		}
+
+		form button {
+			width: 280px;
+			height: 40px;
+			margin-top: -8px;
+			border: solid #EAEAEA;
+			border-width: 1px;
+			border-radius: 4px;
+			background-color: rgba(0,0,0,0);
+			color: #EAEAEA;
+		}
+
+	</style>
 </head>
 
 <body>
