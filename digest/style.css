@@ -204,69 +204,6 @@ body {
 	color: #CCC;
 }
 
-	#btn {
-		display: none;
-	}
-
-	#btn:checked ~ form {
-		display: block;
-	}
-
-	form {
-		width: 280px;
-		position: relative;
-		display: none;
-		text-align: left;
-	}
-
-	form p {
-		margin-top: 40px;
-	}
-
-	form input, form textarea {
-		margin: 0;
-		padding: 0;
-		background: none;
-		border: none;
-		border-radius: 0;
-		outline: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		color: #EAEAEA;
-		font-size: 14px;
-	}
-
-	form input {
-		width: 274px;
-		height: 24px;
-		border-bottom: solid #EAEAEA;
-		border-width: 1px;
-		margin-left: 1px;
-		padding: 0 0 4px 6px;
-	}
-
-	form textarea {
-		width: 266px;
-		height: 210px;
-		border: solid #EAEAEA;
-		border-width: 1px;
-		border-radius: 4px;
-		margin-top: 4px;
-		padding: 4px 6px;
-	}
-
-	form button {
-		width: 280px;
-		height: 40px;
-		margin-top: -8px;
-		border: solid #EAEAEA;
-		border-width: 1px;
-		border-radius: 4px;
-		background-color: rgba(0,0,0,0);
-		color: #EAEAEA;
-	}
-
 .bottom {
 	margin-top: 16.6%;
 }
